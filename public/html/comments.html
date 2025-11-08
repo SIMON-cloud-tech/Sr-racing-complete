@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../assets/logo.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comments</title>
+  <link rel="stylesheet" href="../css/comments.css" />
+</head>
+<body>
+  <p id="commentCount">Total Comments: 0</p>
+  <div class="container">
+    <h2>Leave a Comment</h2>
+    <form id="commentForm">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Email (not published)</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="website">Website</label>
+      <input type="url" name="website" id="website" />
+
+      <label for="comment">Comment</label>
+      <textarea name="comment" id="comment" rows="4" required></textarea>
+
+      <div class="checkbox-group">
+        <input type="checkbox" name="notify" id="notify" />
+        <label for="notify">Notify me when new comments are posted</label>
+      </div>
+
+      <button type="submit">Submit</button>
+      <p id="msg"></p>
+    </form>
+  </div>
+  <script src="../js/comments.js"></script
+</body>
+</html>

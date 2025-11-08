@@ -1,0 +1,363 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Section containing scrollable form */
+.contact-section {
+  height: 100vh;              /* Section visible height */
+  width: 100%;
+  overflow-y: auto;             /* Scroll only inside section */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 15px #0000001f;
+  padding: 20px 30px;
+  max-width: 70vw;
+  margin: 40px auto;
+  scroll-behavior: smooth;
+}
+.logo1{
+  text-align: center;
+}
+.logo1 img{
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  max-height: 200px;
+}
+.contact-section h2 {
+  text-align: start;
+  color: #222;
+  margin-bottom: 20px;
+}
+.contact-section h2, p{
+  margin-left: 2rem;
+  color: black;
+}
+
+/*===============CONTACT FORMS  STYLINGS===================*/
+/* ===== FORM CONTAINER ===== */
+.form-container {
+  margin-top: 2rem;
+  border-radius: 12px;
+  min-width: 90%;
+  background:transparent;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.205);
+  font-family: 'Times New Roman', Times, serif;
+}
+.form-container label{
+  color: black;
+  background-color: transparent;
+}
+.form-container input[type="text"],
+input[type="email"],
+select{
+  border: 1px solid black;
+}
+#country, #competition, #years, #design, #analyse, #make, #machine, #printer{
+  border: 1px solid;
+}
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  color: #fff;
+  font-size: 3.8rem;
+  letter-spacing: 1px;
+}
+
+.form-container h4 {
+  text-align: start;
+  color: #666;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+#star {
+  color: #e63946;
+}
+
+/* ===== FORM ELEMENTS ===== */
+#enrolmentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+label {
+  font-weight: 500;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  border: 1px solid #cccccc2d;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff81;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* ===== CHECKBOX SECTION ===== */
+.checkbox-group{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* small and elegant space */
+  font-size: 0.95rem;
+  color: white;
+  line-height: 1.4;
+}
+
+/* Make checkbox neat and small */
+.check input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #007bff; /* modern checkbox color */
+  cursor: pointer;
+  left: 2px;
+}
+#checkbox{
+  text-align: start;
+  cursor: pointer;
+  accent-color: #007bff;
+  width: 18px;
+  height: 18px;
+  border-radius: 1px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  background: gray;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #1c2541;
+}
+
+/* ===== MESSAGE TEXT ===== */
+#msg {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #007bff;
+  margin-top: 0.5rem;
+}
+.email-container{
+  display: grid;
+}
+.email input{
+  padding: 5px 5px;
+  width: 100%;
+}
+.button{
+  background-color: #007bff;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+.button:hover{
+  background-color: #007bffcb;
+  transition: 0.6s;
+}
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.links a{
+  color: #007bff;
+  text-decoration: none;
+}
+.links small{
+  font-size: smaller;
+}
+/*===============CONTACT FORMS  STYLINGS===================*/
+/*form*/
+.form-container {
+  padding: 30px;
+  margin-left: 1rem;
+  max-width: 600px;
+  width: 100%;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+input, select, textarea {
+  padding: 15px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 0.06px solid #ccc;
+  border-style: inset;
+}
+label{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+select{
+    width: 96%;
+}
+input, textarea{
+    width: 94%;
+}
+#know{
+    height: 100px;
+}
+#comment{
+    height: 200px;
+}
+input:focus, select:focus, textarea:focus {
+  outline: 1px solid #0f0;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 30px;
+  border: none;
+  width: 200px;
+  background: gray;
+  color: white;
+  line-height: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00ff99;
+}
+
+.check {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#checkbox{
+    font-size: 14px;
+}
+#msg {
+  margin-top: 10px;
+  text-align: center;
+  color: #0f0;
+}
+#years, #country, #competition, #design, #analyse, #make, #machine, #printer{
+  border: 1px solid black;
+}
+/*form*/
+/*footer*/
+.section-border{  
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* faint white/gray */
+}
+.footer{
+    display: flex;
+    align-items: start;
+    margin-top: 2rem;
+    justify-content: start;
+}
+/*Privacy stylings*/
+.start{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 10px;
+    color: white;
+}
+.start h2, h3, h4{
+    text-align: start;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.start p{
+    margin-left: 2rem;
+    color: white;
+}
+.start ul{
+    margin-left: 2rem;
+    display: block;
+}
+.start ul li{
+    list-style: none;
+}
+.icon{
+    text-decoration: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.582);
+    width: max-content;
+}
+
+/*Cookies*/
+.start ul{
+  margin-left: 1rem;
+}
+.start p{
+  margin-left: 1rem;
+}
+.start .sub{
+  margin-left: 1rem;
+}
+.homepage h1{
+  text-align: start;
+  margin-left: 1rem;
+  font-style: italic;
+}
+.start a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.start ul li ul{
+    display: block;
+    gap: 10px;
+}
+.start ul li ul li{
+    list-style: none;
+    margin-left: 0;
+}
+.start p, ul, h3, .sub{
+  margin-left: 1rem;
+  font-size: 18px;
+}
+.start ul li .sub{
+    padding: 10px 0;
+}
+footer{
+    padding: 40px 10px;
+    color: white;
+    font-size: small;
+}
+
+/*mobile responsiveness*/

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../assets/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/news.css">
+  <link rel="stylesheet" href="../css/newsform.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+      
+  <nav class="navbar">
+    <div class="logo">
+      <img loading="lazy" src="../assets/logo.png" alt="Logo">
+
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="menu" id="menu">
+      <li  class="has-submenu">
+        <a href="#">HOME </a>
+        <ul class="submenu">
+            <li><a href="cookies.html">COOKIES POLICY</a></li>
+            <li><A href="privacy.html">PRIVACY POLICY</A></li>
+        </ul>
+    </li>
+
+      <li class="has-submenu">
+        <a href="#">THE CHALLENGE </a>
+        <ul class="submenu">
+          <li><a href="#">ABOUT THE CHALLENGE</a></li>
+          <li class="has-submenu">
+            <a href="#">BASIC STEPS &#9656;</a>
+            <ul class="submenu">
+                <li><A href="register.html">REGISTER</A></li>
+                <li><a href="learn.html">LEARN</a></li>
+                <li><a href="compete.html">COMPETE</a></li>
+                <li><a href="enrol.html">GLOBAL ENROLMENT</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">HOW IT WORKS</a></li>
+          <li class="has-submenu">
+            <a href="#">CLASSES OF ENTRY &#9656;</a>
+            <ul class="submenu">
+              <li><a href="primaryclass.html">PRIMARY CLASS</a></li>
+              <li><a href="entryclass.html">ENTRY CLASS</a></li>
+              <li><a href="developmentclass.html">DEVELOPMENT CLASS</a></li>
+              <li><a href="professional.html">PROFESSIONAL CLASS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a href="#">INTERNATIONAL </a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#">WORLD FINALS 2025 &#9656;</a>
+            <ul class="submenu">
+                <li><a href="teamprofiles.html">TEAM PROFILES</a></li>
+                <li><a href="komatsuwilliamsacademy.html">KOMATSU-WILLIAMS ENGINEERING ACADEMY</a></li>
+                <li><a href="surveys.html">SURVEY</a></li>
+                <li><a href="clarifications.html">CLARIFICATIONS 2025</a></li>
+            </ul>
+        </li>
+
+          <li><a href="#">WHERE TO  FIND US</a></li>
+
+          <li class="has-submenu">
+            <a href="#">COUNTRY LIST &#9656;</a>
+            <ul class="submenu">
+              <li class="has-submenu"><a href="#">ALGERIA</a><ul class="submenu"><li><a href="algeria.html">Contact Algeria</a></li></ul></li>
+              <li class="has-submenu"><a href="#">AUSTRALIA</a><ul class="submenu"><li><a href="australia.html">Contact Australia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">BRAZIL</a><ul class="submenu"><li><a href="brazil.html">Contact Brazil</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAMBODIA</a><ul class="submenu"><li><a href="cambodia.html">Contact Cambodia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CANADA</a><ul class="submenu"><li><a href="algeria.html">Contact Canada</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAYMAN ISLANDS</a><ul class="submenu"><li><a href="#">RESOURCES(CAYMANS ISLANDS)</a></li><li><a href="#">CONTACTS (CAYMANS  ISLANDS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CHINA</a><ul class="submenu"><li><a href="china.html">Contact China</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UNITED KINGDOM</a><ul class="submenu"><li><a href="uk.html">Contact United Kingdom</a></li></ul></li>
+              <li class="has-submenu"><a href="#">COSTA RICA</a><ul class="submenu"><li><a href="costarika.html">Contact Costa RiCa</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CYPRUS</a><ul class="submenu"><li><a href="cyprus.html">Contact Cyprus</a></li></ul></li>
+              <li class="has-submenu"><a href="#">FRANCE</a><ul class="submenu"><li><a href="france.html">Contact France</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GREECE</a><ul class="submenu"><li><a href="greece.html">CONTACT (GR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GERMAN</a><ul class="submenu"><li><a href="german.html">CONTACTS (GER)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HONG KONG</a><ul class="submenu"><li><a href="hongkong.html">CONTACT (HK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HUNGARY</a><ul class="submenu"><li><a href="hungary.html">CONTACT (HU)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">INDIA</a><ul class="submenu"><li><a href="india.html">CONTACT (IND)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">ITALY</a><ul class="submenu"><li><a href="algeria.html">CONTACT (IT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JAPAN</a><ul class="submenu"><li><a href="japan.html">CONTACT (JP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JORDAN</a><ul class="submenu"><li><a href="resoucesjordan.html">RESOURCES(JORDAN)</a></li><li><a href="jordan.html">CONTACTS (JOR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">KUWAIT</a><ul class="submenu"><li><a href="kuwait.html">CONTACT (KUWAIT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">LUXEMBOURG</a><ul class="submenu"><li><a href="luxembourg.html">CONTACT (LX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MAURITIUS</a><ul class="submenu"><li><a href="maurtius.html">CONTACT (MAURITIUS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MEXICO</a><ul class="submenu"><li><a href="mexico.html">CONTACT (MEX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MALAYSIA</a><ul class="submenu"><li><a href="malaysia.html">CONTACT (MAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">NEPAL</a><ul class="submenu"><li><a href="nepal.html">CONTACT (NEPAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PANAMA</a><ul class="submenu"><li><a href="panama.html">CONTACT (PANAMA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">POLAND</a><ul class="submenu"><li><a href="poland.html">CONTACT (PL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PORTUGAL</a><ul class="submenu"><li><a href="portugal.html">CONTACT (PT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SINGAPORE</a><ul class="submenu"><li><a href="singapore.html">CONTACT (SIN)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SLOVENIA</a><ul class="submenu"><li><a href="slovia.html">CONTACT (SLO)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH AFRICA</a><ul class="submenu"><li><a href="southafrica.html">CONTACT (SA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SPAIN</a><ul class="submenu"><li><a href="spain.html">CONTACT (SP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SWITZERLAND</a><ul class="submenu"><li><a href="switzerland.html">CONTACT (SIW)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SAUDI ARABIA</a><ul class="submenu"><li><a href="saudiarabia.html">CONTACT (SAUDI)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH KOREA</a><ul class="submenu"><li><a href="southkorea.html">CONTACT (SK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UAE</a><ul class="submenu"><li><a href="uae.html">CONTACT (UAE)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">USA</a><ul class="submenu"><li><a href="usa.html">THE COMPETITION (USA)</a></li></ul></li>
+
+            </ul>
+        </li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">MORE &#8943;</a>
+        <ul class="submenu">
+            <li class="has-submenu">
+            <a href="#">RESOURCES &#9656;</a>
+            <ul class="submenu">
+                <li><a href="rules.html">RULES & REGULATIONS</a></li>
+                <li><a href="equipment.html">EQUIPMENTS</a></li>
+                <li><a href="downloads.html">DOWNLOADS</a></li>
+                <li class="has-submenu">
+                    <a href="#">SOFTWARE &#9656;</a>
+                    <ul class="submenu">
+                        <li><a href="autodesk.html">AUTODESK</a></li>
+                        <li><a href="ansys.html">ANSYS</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+            <li class="has-submenu">
+              <a href="#">MEDIA</a>
+            <ul  class="submenu">
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="reports.html">IMPACT REPORT 24/25</a></li>
+              <li><a href="newsletter.html">SUBSCRIBE</a></li>
+            </ul>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">CORPORATE</a>
+            <ul class="submenu">
+              <li><a href="partnerships.html">PARTNERSHIPS</a></li>
+              <li><a href="sponsership.html">SPONSORSHIPS</a></li>
+              <li><a href="franchising.html">FRANCHISING</a></li>
+            </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </li>
+    </ul>
+  </nav>
+  <section class="main-section">
+  <section class="cards">    
+    <div class="card">
+        <h1>AMARON POWERS UP AS PREMIUM PARTNER OF ARAMCO STEM RACING WORLD FINALS 2025 </h1>
+        <h5><i>9/19/2025   <a id="commentCount" href="comment1.html">0 Comments</a></i></h5>
+        <div class="image"><img loading="lazy" src="../assets/news1.png"></div>
+        <div class="content">
+            <p>Amaron, Flagship brand of India’s leading automotive battery manufacturer, will energise the Aramco STEM Racing World Finals 2025 as a Premium Partner, supporting the world’s largest global student STEM competition taking place from 27 September to 2 October at Resorts World Sentosa, Singapore.</p>
+            <p>As part of this partnership, Amaron will sponsor the third-place podium award and present the official 3rd Place Trophy to one of the world’s top STEM Racing teams. Formerly known as F1 in Schools, the programme rebranded to STEM Racing earlier this year and is set to host its largest World Finals to date, with more than 80 student teams competing from around the globe.</p>
+            <p>For Amaron, this partnership is about powering the future. By backing a platform that pushes students to design, innovate, and engineer under pressure, Amaron is reaffirming its belief in the young generation as drivers of superior technology and changemakers of tomorrow. The brand sees clear synergies between its ethos of endurance, performance, and reliability and the qualities that STEM Racing instils in participants worldwide.</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/new2.jpg"></div>
+        <div class="content">
+            <p>Harshavardhana Gourineni, Executive Director, Amara Raja Energy & Mobility said “We believe the future belongs to young innovators who dare to think differently and build superior technologies for a better tomorrow. This partnership with STEM Racing fits seamlessly with Amaron’s ethos of supporting future generations of innovators and encouraging them to push the boundaries of engineering.  The STEM Racing programme challenges young people to design with precision, think creatively, and work as a team to achieve results under pressure and we are truly delighted to join the roster of STEM Racing partners for such a prestigious event and to play our part in energising the largest World Finals to date” </p>
+            <p>Andrew Denford, Founder and Chairman, STEM Racing, added: “Our mission has always been to ignite a passion for science, technology, engineering, and mathematics by giving students the chance to experience innovation in action. Partners like Amaron make it possible for us to deliver a truly world-class competition, where young people from every corner of the globe can test their skills and showcase their creativity. Having Amaron on board, with their reputation for cutting-edge technology and long-lasting performance, sends a powerful message to our students: that industry leaders believe in their talent and want to invest in their future. We’re thrilled to have them as part of the STEM Racing family.”</p>
+            <p>The collaboration, resilience, and innovation that these students demonstrate are the same qualities that drive progress in the workplace and the wider world. At Amaron, we believe these qualities deserve to be celebrated, and we are proud to stand alongside STEM Racing in applauding and empowering the changemakers of tomorrow.”</p>
+            <p>As Premium Partner of the Aramco STEM Racing World Finals 2025, Amaron reinforces its focus on nurturing the next generation of innovators. In addition to its global partnership, the brand is also extending its support to a team from India competing at the event.</p>
+        </div>
+<div class="btns">
+  <a href="#" class="like-btn">
+    <i class="fas fa-thumbs-up"></i> Like
+  </a>
+  <a href="#" class="x-btn">
+    <i class="fab fa-x-twitter"></i> Post
+  </a>
+</div>
+    </div>
+
+    <div class="card">
+        <h1>New era for aramco stem racing world finals</h1>
+        <h5><i>9/3/2025   <a id="commentCount" href="comments2.html">0 Comments</a></i></h5>
+        <div class="image"><img loading="lazy" src="../assets/news3.jpg"></div>
+        <div class="content">
+            <p>The countdown has begun for the Aramco STEM Racing World Finals 2025, and a bold new chapter for the world’s most prestigious STEM education competition. Reimagined and rebranded from the globally recognised F1 in Schools, this year’s event will not only celebrate a rich 20-year legacy—it will also crown the very first Aramco STEM Racing World Champions.</p>
+            <p>From 27 September to 2 October, the global spotlight will shine on Sentosa Island, Singapore, as over 80 student teams from across more than 30 nations gather to compete at the cutting edge of creativity, engineering, and enterprise. From designing and engineering the fastest miniature Formula 1-inspired race car to showcasing excellence in marketing, teamwork, and project management, these student teams will be vying for the World Champions crown. And this year, the World Finals are shifting into an even higher gear. </p>
+            <p>For the first time ever, the World Finals will feature four-lane racing, a spectacular evolution from the traditional head-to-head duels of past Finals. Now, four teams will line up side-by-side, their miniature race cars primed for a simultaneous launch that promises twice the adrenaline and four times the spectacle.</p>
+            <p>This game-changing innovation introduces new technical and mental challenges, especially for the drivers who must stay laser-focused on a single set of lights while flanked by three rival competitors. Nerves of steel and split-second timing will be tested like never before.</p>
+            <p>In another landmark moment, this will be the largest STEM Racing World Finals in history, with more than 80 teams qualifying through rigorous national competitions. Included in the 33 countries competing will be first-time contenders from Costa Rica, having recently introduced STEM Racing to schools in the country. </p>
+            <p>Technical regulation changes include a reduction in minimum car weight and the introduction of legal ballast, and minor adjustments to the Formula 1 model car dimensions. </p>
+            <p>Andrew Denford, Founder and Chairman, STEM Racing, says, “Every year, I say the World Finals will be the biggest and best yet and every year, the teams prove me right. But 2025 truly marks a transformative moment for STEM Racing. With the debut of our custom-designed four-lane track, we’re adding an entirely new layer of excitement and complexity to the competition. It’s a visual and technical spectacle, made possible by the incredible scale of this year’s event, with over 90 teams competing from around the globe.</p>
+            <p>“Welcoming new countries like Costa Rica to the Finals is always one of the most rewarding parts of our work. Expanding our global reach means more students from diverse backgrounds can experience this life-changing journey—building friendships across borders, sharing cultures, and connecting through a shared passion for STEM.”</p>
+            <p>The Aramco STEM Racing World Finals 2025 is proudly supported by title sponsor, Aramco and key partners including Denford, Autodesk, Ansys, Singapore Grand Prix, DHL, Project Management Institute Educational Foundation, Mitutoyo, UCL Mechanical Engineering, Singapore Tourism Board and the FIA.</p>
+        </div>
+<div class="btns">
+  <a href="#" class="like-btn">
+    <i class="fas fa-thumbs-up"></i> Like
+  </a>
+  <a href="#" class="x-btn">
+    <i class="fab fa-x-twitter"></i> Post
+  </a>
+</div>
+    </div>
+
+    <div class="card">
+        <h1></h1>
+        <h5><i></i><a id="commentCount" href="comment3.html">0 Comments</a></h5>
+        <div class="image"><img loading="lazy" src="../assets/news4.png"></div>
+        <div class="content">
+            <p>We are delighted to announce the continued partnership of Mitutoyo, the world’s leading manufacturer of precision measuring equipment, for the Aramco STEM Racing World Finals 2025. This renewed collaboration reaffirms a shared commitment to excellence, precision, and inspiring the next generation of engineers and innovators.</p>
+            <p>Mitutoyo’s continued support enhances the event’s technical foundation, playing a crucial role in the scrutineering phase—where each team’s car undergoes a rigorous technical inspection to ensure compliance with strict regulations. Mirroring the exacting standards of a real Formula 1 Grand Prix, scrutineering is conducted under Parc Fermé conditions, with every car examined for precision and accuracy using Mitutoyo’s world-class tools.</p>
+            <p>Tools such as vernier calipers, digimatic scales, and other advanced metrology instruments will be used by scrutineers to assess each car to millimetre-level accuracy. This level of precision is vital in determining each team’s compliance with technical specifications and maintaining fairness in competition. Teams will also have the unique opportunity to observe this process, gaining firsthand insight into real-world engineering practices.</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news5.png"></div>
+        <div class="content">
+            <p>In the lead-up to the World Finals, participating teams will benefit from exclusive access to the Mitutoyo eLearning platform, a comprehensive digital resource that offers in-depth training on metrology principles, measurement techniques, and tool handling. This access is designed to enhance students’ understanding and skills, supporting their preparation for the crucial scrutineering judging.</p>
+            <p>Takashi Matsuike, Managing Director of Mitutoyo Asia Pacific, said, “The event has a crucial role in developing the next generation of engineers and innovators; today's training is vital for tomorrow's industry success. The Finals also provide an excellent platform for us to highlight the practical applications of metrology and showcase the essential tools and equipment that drive it.”</p>
+            <p>Andrew Denford, Founder and CEO of F1 in Schools, adds, “We are proud to have the continued support of Mitutoyo, a global leader in precision engineering. Accurate measurement is at the core of all great engineering—whether it’s a full-scale Formula 1 car or our scale racing models. With Mitutoyo’s tools and expertise, we ensure a level playing field and inspire students to adopt the highest standards of technical excellence.</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news6.png"></div>
+        <div class="content">
+            <p>With a global presence spanning over 100 countries, Mitutoyo offers local support alongside world-class technical expertise. Its comprehensive range of precision measuring solutions—spanning from micrometers, calipers, and indicators to hardness testers, vision measuring systems, form measuring machines, and 3D coordinate measuring machines—makes it the partner of choice for leading industries and educational institutions worldwide.</p>
+            <p>The continued partnership between Mitutoyo and STEM Racing underscores a mutual dedication to empowering young STEM talent, fostering innovation, and inspiring the engineers of tomorrow through real-world experience, global collaboration, and cutting-edge technology.</p>
+        </div>
+<div class="btns">
+  <a href="#" class="like-btn">
+    <i class="fas fa-thumbs-up"></i> Like
+  </a>
+  <a href="#" class="x-btn">
+    <i class="fab fa-x-twitter"></i> Post
+  </a>
+</div>
+    </div>
+
+    <div class="card">
+        <h1>June 03rd, 2025</h1>
+        <h5><i> 6/3/2025</i>   <a id="commentCount" href="comment4.html">0 comments</a></h5>
+        <h1>New strategic partnership with Matrix TSL.</h1>
+        <div class="image"><img loading="lazy" src="../assets/news7.jpg"></div>
+        <div class="content">
+            <p><b>Matrix Technology Solutions and STEM Racing unveil official Wind Tunnel for competitor testing</b></p>
+            <p>Matrix Technology Solutions Ltd, Denford Limited and STEM Racing (Formerly F1 in Schools) are excited to announce a strategic partnership focused on enhancing hands-on STEM education. Together, we are proud to unveil the official STEM Racing Wind Tunnel - a state-of-the-art tool designed to help students test, refine, and optimise the aerodynamics of their miniature racing models. This collaboration brings together Matrix’s expertise in engineering education technology with STEM Racing’s dynamic, competition-based learning platform. The result is a powerful educational resource that gives students a deeper understanding of air dynamics, drag, and lift, provided in a classroom-friendly, portable solution.</p>
+            <p><i>“This partnership is incredibly exciting for Matrix as our engineering education solutions continue to grow and evolve. From our very first conversation with STEM Racing, it was clear they we had a revolutionary idea - one that would elevate the competition experience for years to come. We’re proud to be part of this journey and to support the next generation of engineers through such an inspiring and impactful programme.” – Liam Walton, Managing Director, Matrix TSL. </i></p>
+        </div>
+        <div class="two-images">
+            <div class="image1"><img loading="lazy" src="../assets/news8.jpg"></div>
+            <div class="image1"><img loading="lazy" src="../assets/news9.jpg"></div>
+        </div>
+        <div class="content">
+            <p>The wind tunnel from Matrix, is designed for teaching aerodynamic principles and exploration of fluid flow. Created with an optimally sized testing section to house STEM Racing car models, the wind tunnel enables student teams to gather real-time aerodynamic data to inform their car designs. </p>
+            <p><i>“STEM Racing is all about creating engaging experiences that connect theory with real-world application. The introduction of the official STEM Racing Wind Tunnel provides students with a tool that uses state-of-the-art technology to deliver key STEM learning within the STEM Racing programme and elevate their design and engineering process for a competitive edge. </i></p>
+            <p><i>This collaboration with Matrix Technology Solutions provides students with the ability to analyse and test their designs in a controlled environment. We’re not just helping them build faster cars, we’re equipping them with critical thinking, problem-solving, and engineering skills that will benefit both their education and future careers. The wind tunnel is more than just a tool - it’s a launchpad for the next generation of innovators, and we’re excited to see the STEM Racing teams integrating the use of the STEM Racing Wind Tunnel into their F1 car R & D programmes.” - Andrew Denford, Founder and Chairman, STEM Racing Ltd.</i></p>
+            <p><b>The official STEM Racing Wind Tunnel will be available to schools, universities, clubs, and education providers</b></p>
+            <p class="more">For more information please click <a href="https://denford.co.uk/products/stem-racing-wind-tunnel" target="_blank">here</a></p>
+        </div>
+        <div class="video"></div>
+<div class="btns">
+  <a href="#" class="like-btn">
+    <i class="fas fa-thumbs-up"></i> Like
+  </a>
+  <a href="#" class="x-btn">
+    <i class="fab fa-x-twitter"></i> Post
+  </a>
+</div>
+    </div>
+
+    <div class="card">
+        <h1>May 13th, 2025</h1>
+        <h5><i> 5/13/2025</i>  <a id="commentCount" href="comment5.html">0 Comments</a></h5>
+        <h1>Singapore to host inaugural Aramco STEM Racing World Finals</h1>
+        <div class="image"><img loading="lazy" src="../assets/news10.png"></div>
+        <div class="content">
+            <p>The highly anticipated Aramco STEM Racing World Finals 2025 is set to take place in Singapore from 27 September to 2 October 2025, running alongside the spectacular Formula 1 Singapore Airlines Singapore Grand Prix 2025.</p>
+            <p>This landmark event will be the 20th edition of the globally recognized science, technology, engineering, and math (STEM) program’s World Finals and the first under its new branding, following the transition from its previous name, F1 in Schools.</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news11.jpg"></div>
+        <div class="content">
+            <p>Following the success of the Aramco F1 in Schools World Finals 2024 in Dhahran, Saudi Arabia — the headquarters of title partner Aramco — this prestigious event returns to Singapore for the fifth time. Known for its status as a global hub for technology and innovation, Singapore's vibrant cityscape and proven track record of hosting world-class events make it the ideal location for this inaugural event.</p>
+            <p>The event will bring together the brightest young STEM minds from across the globe. The students have already triumphed in their respective national competitions, earning places at the prestigious World Finals.</p>
+            <p>With Singapore’s global appeal and the thrill of the Formula 1 night race, the Aramco STEM Racing World Finals 2025 is expected to attract a record number of teams. Participants, organized into teams of three to six students, will function as miniature Formula 1 teams, undertaking all aspects of team management. This includes designing, manufacturing, and testing miniature F1 race cars, which they will race on the 20-meter STEM Racing track. Additionally, teams will develop their own team identities, closely mirroring the professional Formula 1 teams competing in the FIA Formula 1 World Championship™</p>
+            <p>This year’s competition will mark the debut of the Aramco STEM Racing World Champions trophy, to be awarded for the first time to the top-performing team. Alongside this prestigious accolade, teams will compete for over 20 category awards, recognizing achievements across various judging elements, with each award supported by Formula 1 teams and industry suppliers.</p>
+            <p>Many past competitors have successfully transitioned into careers within Formula 1 and related industries, working in fields such as aerodynamics, engineering, project management, design, finance, and research. The program continues to serve as a premier talent pipeline for the motorsport and engineering sectors. By harnessing the creativity, passion, and technical skills of young minds worldwide, this initiative not only cultivates the next generation of STEM leaders but also inspires them to pursue dynamic careers in the motorsport industry.</p>
+            <p><b>Ellen Jones, Formula 1 Head of ESG,</b> said: “Over the past 20 years, STEM Racing has inspired students around the world to pursue careers in engineering. We are proud to support a program that celebrates values that are central to Formula 1 — teamwork, innovation, and problem solving. As F1 celebrates its 75th anniversary, we look to the future, and through competitions like STEM Racing, we hope to find the next generation of talent to push the sport forward. Good luck to all the teams.”</p>
+            <p><b>Khalid A. Al Zamil, Aramco Senior Vice President of Corporate Communications, said:</b> “Last year’s Aramco F1 in Schools World Finals, which was held in the Kingdom, showcased how much talent exists in the next generation of engineers. With the STEM Racing team, we aim to equip young pioneers to engineer a brighter future. There is no better way to celebrate our continued partnership than with an exciting world-class finale at the end of September 2025.”</p>
+            <p><b>Andrew Denford, STEM Racing Founder and Chairman, said:</b> "The Aramco STEM Racing World Finals 2025 marks an exciting new chapter for our global STEM program. Once again, we will bring together the brightest young STEM talents from around the world to compete at the highest level. The World Champions title is more than just an accolade — it's a gateway to future careers in motorsport, engineering, and beyond."Denford added: “Singapore has always given us a warm welcome, and our students have enjoyed the cultural heritage, the amazing cityscape, and the inspiring setting. The location leaves a lasting impression and gives them all an unforgettable experience, and we can’t wait to be there in September.”With a rich history of innovation and excellence, the Aramco STEM Racing World Finals 2025 promises to be a thrilling showcase of young talent, engineering brilliance, and the spirit of competition.</p>
+            <p>The Aramco STEM Racing World Finals 2025 is supported by title sponsor, Aramco and partners Denford, Autodesk, Ansys, Singapore Grand Prix, Project Management Institute Educational Foundation, UCL Mechanical Engineering, Singapore Tourism Board and FIA Women in Motorsport.</p>
+            <p></p>
+        </div>
+<div class="btns">
+  <a href="#" class="like-btn">
+    <i class="fas fa-thumbs-up"></i> Like
+  </a>
+  <a href="#" class="x-btn">
+    <i class="fab fa-x-twitter"></i> Post
+  </a>
+</div>
+    </div>
+
+    <div class="card">
+        <h1>December 18th, 2024</h1>
+        <h5><i> 12/18/2024   <a id="commentCount" href="comments.html">0 Comments</a></i></h5>
+        <h1>F1 in Schools rebrands to STEM Racing with the continued support of Formula 1</h1>
+        <div class="image"><img loading="lazy" src="../assets/news12.png"></div>
+        <div class="content">
+            <p>F1 in Schools is rebranding to STEM Racing and will be the latest organisation to be given the ‘supported by Formula 1’ designation. The STEM Racing programme will continue to help thousands of young students around the world in an exciting new era where it will distinguish itself as an independent non-profit organisation, while still harnessing the full support of F1 and the sport’s community.</p>
+            <p>STEM Racing will continue to drive positive change and inspire the next generation alongside Formula 1, and the core mission of the programme remains to enable students worldwide to pursue STEM subjects in their education with a view to a potential career in motorsport. Through the programme, which is designed for teachers and informed by engineers, ​students aged 6-19 gain insight in areas of STEM through the creation of a miniature F1 car.</p>
+            <p>Working in small groups, either within classroom learning or in extracurricular activities, students put their own version of an F1 team together where they are assigned roles and responsibilities, such as designing the car, manufacturing it, testing it, branding it, or even becoming the Team Principal to ensure everything runs smoothly. Teams then race against each other and present their cars and wider projects to a panel of judges.</p>
+            <p>Operating globally, teams showcase their work in regional and national competitions, with the goal of competing in the prestigious World Finals. This year evolut1on, from Germany, were crowned champions at the finals hosted in Dhahran, Saudi Arabia. The evolut1on team, and other select students, then had the opportunity to visit the FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024 at the Lusail International Circuit to get up close and personal with the world of Formula 1. The programme will continue to bring students into the Paddock at Grands Prix around the world, providing hands-on experiences in the world of motorsport and insight from industry personnel.</p>
+            <p> The support of STEM Racing further enhances the continued efforts by Formula 1 to provide opportunities for young people and those from underrepresented backgrounds to help break down barriers into the motorsport industry by embedding an understanding and excitement for STEM at all levels of education. From school programmes through to scholarships, the Formula 1 community works together to inspire the next generation to pursue their education in our outreach work.</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news13.png"></div>
+        <div class="content">
+            <p><b>Ellen Jones, Head of ESG, Formula 1 said:</b></p><br />
+            <p>"Education is the cornerstone of the future of F1 and this is why we are so passionate about empowering future generations globally to pursue their dreams in STEM and motorsport. The support for the STEM Racing will build on the fantastic work that has already been done over two decades and is the latest example of how we are continuing to make pathways for young people around the world to achieve their goals and show them what is possible."</p>
+            <p><b>Andrew Denford, Founder and Chairman of STEM Racing, commented:</b></p><br />
+            <p>"We're delighted to become an organisation that is officially supported by Formula 1, continuing our mission to bring the excitement of F1 into classrooms worldwide – we aim to inspire future generations to explore STEM and unlock their potential through engaging events and hands-on experiences both on and off the grid.“</p>
+        </div>
+<div class="btns">
+  <a href="#" class="like-btn">
+    <i class="fas fa-thumbs-up"></i> Like
+  </a>
+  <a href="#" class="x-btn">
+    <i class="fab fa-x-twitter"></i> Post
+  </a>
+</div>
+    </div>
+    <div class="card">
+        <h1>December 10th, 2024</h1>
+        <h5>12/10/2024<i></i> <a id="commentCount" href="comments.html">0 comments</a></h5>
+        <h1></h1>
+        <div class="video"></div>
+        <div class="content">
+            <p>26 November 2024: The winners of the Aramco F1 in Schools 2024 World Finals were announced as evolut1on from Karl-Maybach-Gymnasium in Germany. The team of four students, aged 16 – 17 were awarded the prestigious title following a three-day competition against 54 other teams from 25 countries. Becoming the 19th recipients of the title, evolut1on were presented with the accolade by Nabeel A. Al Jama, Executive Vice President, HR and Support Services, Saudi Aramco on stage at a glittering awards ceremony at Dhahran Expo, in the Kingdom of Saudi Arabia’s Eastern Province. <br />
+              Adding to the prestige of the occasion the students were honoured to have two-times Formula 1 World Champion and Aramco Aston Martin Formula One Team driver, Fernando Alonso, attend the Awards ceremony, giving the students an insight into his career in a Q & A session and meeting many of the teams in a tour of the Pit Displays. He then kicked-o the final races of the Knockout Competition and presented the Aston Martin Aramco Formula One Team supported “Best Newcomer Award” to the winners, Agilas, from the Philippines.
+            </p>
+            <p>10 lucky students celebrated winning a coveted place in the Komatsu-Williams Engineering Academy, a global initiative designed to cultivate the next generation of engineering talent. The Academy’s first intake have been selected exclusively from this year’s World Finals students. By joining the Academy, students will gain invaluable experience and insights, benefiting from the combined expertise and resources of both Komatsu and Williams Racing. ​</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news14.jpg"></div>
+        <div class="content">
+            <p>The Aramco F1 in Schools World Champions title is highly recognized within the engineering and motorsport industries due to its rigorous judging criteria. Encompassing design, engineering, project management, innovation, marketing, and presentation skills, the multi-disciplinary challenge requires students to demonstrate a high level of competence and expertise across a range of subject areas. Many members of past teams who have secured the World Champions title have progressed to roles within F1 teams, including Lewis Fowler and George Stonor of 2019 winners, Evolve UK; Kyriakos Theofanidis of 2016 winners, Infinite Racing; and George and Max Britton of 2015 winners, Union Racing International, among others.</p>
+            <p>​With the award determined by scoring from a panel of over 60 industry judges, comprised of professionals from a range of industries, including STEM, marketing, motorsport, and education, the team achieved the highest scores across the board, and received particular recognition for their performance in engineering becoming the recipients of the Research and Development award, sponsored by McLaren.</p>
+            <p>Commenting on their achievement, Team Manager, Theo Paulsen, 16, said: “We really didn’t believe we would win. We’ve spent over two years working on this and put thousands of hours into it, it’s just amazing to have beaten all these other talented teams. We’re in shock at the moment, we just can’t quite believe it, I think it will take a while to sink in. The experience has been so special and the hospitality in Saudi Arabia has been wonderful.”</p>
+            <p>This year’s Aramco F1 in Schools World Finals was the first time the event has taken place in the Kingdom of Saudi Arabia and has seen over 450 students and educators from 25 countries visit the Kingdom to compete. O icially welcomed by the Cultural Partner, Ithra, on Saturday, students visited the famous center to gain insight into Saudi Arabian culture before the next day’s competition. The event will conclude with students visiting Qatar ahead of the Formula 1 Qatar Airways Qatar Grand Prix, for an exclusive pit lane walk at Lusail International Circuit on Thursday </p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news15.jpg"></div>
+        <div class="contend">
+            <p><b>Khalid Al-Zamil, Aramco Vice President of Public A airs, said</b>: “This year’s Aramco F1 in Schools World Finals showcased just how much talent exists within this next generation of engineers and pioneers. Evolut1on did a phenomenal job to achieve the World Champions title. Having the event take place within our home country has made the event particularly special for Aramco as an organization, and it has been an honor and a delight to share our culture with these incredible young people.”</p>
+            <p><b>​Andrew Denford, Founder and Chairman of F1 in Schools, said:</b> “evolut1on truly shone throughout the competition, and we are proud to announce that they are our new World Champions. The standard on show was incredibly high this year, so to beat 54 teams to the title is just a brilliant achievement, and we can’t wait to see what they go on to do next.” ​</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news16.jpg"></div>
+        <div class="image"><img loading="lazy" src="../assets/news17.jpg"></div>
+<div class="btns">
+  <a href="#" class="like-btn">
+    <i class="fas fa-thumbs-up"></i> Like
+  </a>
+  <a href="#" class="x-btn">
+    <i class="fab fa-x-twitter"></i> Post
+  </a>
+</div>
+    </div>
+  </section>
+<section class="archives">
+    <h1>Archives</h1>
+    <ul>
+        <li><a href="">September 2025</a></li>
+        <li><a href="">July 2025 </a></li>
+        <li><a href="">June 2025</a></li>
+        <li><a href="">May 2025 </a></li>
+        <li><a href="">December 2024</a></li>
+    </ul>
+    <p><a href="">RSS feed</a></p>
+</section>
+  </section>
+  <hr class="section-border">
+  <footer>
+    <p>&copy; COPYRIGHTS <span id="year"></span>ALL RIGHTS RESERVED</p>
+  </footer>
+  <script src="../js/script.js"></script>
+<script src="../js/form.js"></script>
+</body>
+</html>

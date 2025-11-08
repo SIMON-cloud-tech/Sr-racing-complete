@@ -1,0 +1,97 @@
+    <div class="form-container">
+  <form id="enrolmentForm">
+    <h3>TEAM Details</h3>
+
+    <label>Country</label>
+    <select name="country" required>
+      <option value="">Select Country</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="Albania">Albania</option>
+      <option value="Algeria">Algeria</option>
+    </select>
+
+    <label>Team Name</label>
+    <input type="text" name="email" required />
+
+    <label>Competition Entry Class</label>
+    <select name="competition" required>
+      <option value="">Select Class</option>
+      <option value="Primary Entry Class">Primary Entry Class</option>
+      <option value="Entry Class">Entry Class</option>
+    </select>
+
+    <label>School Name</label>
+    <input type="text" name="school" required />
+
+    <label>School Postal / Zip Code</label>
+    <input type="text" name="zipcode" required />
+
+    <label>Teacher/Supervisor Email</label>
+    <input type="email" name="supervisoremail" required />
+
+    <label>Number of Students in the Team</label>
+    <input type="text" name="studentsintheteam" required />
+
+    <label>Years Involved in STEM Racing</label>
+    <select name="years" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <h3>Software & Equipment</h3>
+    <label>Design (CAD)</label>
+    <select name="design" required>
+      <option value="AutoCAD">AutoCAD</option>
+      <option value="SketchUp">SketchUp</option>
+      <option value="Onshape">Onshape</option>
+    </select>
+
+    <label>Analyse (CAD)</label>
+    <select name="analyse" required>
+      <option value="AutoCAD">AutoCAD</option>
+      <option value="SketchUp">SketchUp</option>
+      <option value="Onshape">Onshape</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label>Make (CAM)</label>
+    <select name="make" required>
+      <option value="V5 Milling">V5 Milling</option>
+      <option value="Fusion 360">Fusion 360</option>
+      <option value="QUICKCAM Pro">QUICKCAM Pro</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label>CNC Machine</label>
+    <select name="machine" required>
+      <option value="Odisea Fagor 8050N">Odisea Fagor 8050N</option>
+      <option value="BIESSE RoverA">BIESSE RoverA</option>
+      <option value="Baoji 5-axis">Baoji 5-axis</option>
+    </select>
+
+    <label>3D Printer</label>
+    <select name="printer" required>
+      <option value="Anycubic Mega">Anycubic Mega</option>
+      <option value="Photon Mono">Photon Mono</option>
+      <option value="BLOCKS">BLOCKS</option>
+      <option value="CREALITY CR-10">CREALITY CR-10</option>
+    </select>
+
+    <label>Other Equipment Used</label>
+    <input type="text" name="aanyotherEquipment" required />
+
+    <div class="checkbox-group">
+      <input type="checkbox" name="sendCopy" id="sendCopy" />
+      <label for="sendCopy">Send me a copy of my responses</label>
+    </div>
+
+    <div id="emailToSendContainer" style="display: none;">
+      <label>Email to receive copy</label>
+      <input type="email" name="emailToSend" id="emailToSend" />
+    </div>
+
+    <button type="submit">Submit</button>
+    <p id="msg"></p>
+  </form>
+</div>

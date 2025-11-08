@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../assets/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports</title>
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/news.css">
+  <link rel="stylesheet" href="../css/images.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+      
+  <nav class="navbar">
+    <div class="logo">
+      <img loading="lazy" src="../assets/logo.png" alt="Logo">
+
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="menu" id="menu">
+      <li  class="has-submenu">
+        <a href="#">HOME </a>
+        <ul class="submenu">
+            <li><a href="cookies.html">COOKIES POLICY</a></li>
+            <li><A href="privacy.html">PRIVACY POLICY</A></li>
+        </ul>
+    </li>
+
+      <li class="has-submenu">
+        <a href="#">THE CHALLENGE </a>
+        <ul class="submenu">
+          <li><a href="#">ABOUT THE CHALLENGE</a></li>
+          <li class="has-submenu">
+            <a href="#">BASIC STEPS &#9656;</a>
+            <ul class="submenu">
+                <li><A href="register.html">REGISTER</A></li>
+                <li><a href="learn.html">LEARN</a></li>
+                <li><a href="compete.html">COMPETE</a></li>
+                <li><a href="enrol.html">GLOBAL ENROLMENT</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">HOW IT WORKS</a></li>
+          <li class="has-submenu">
+            <a href="#">CLASSES OF ENTRY &#9656;</a>
+            <ul class="submenu">
+              <li><a href="primaryclass.html">PRIMARY CLASS</a></li>
+              <li><a href="entryclass.html">ENTRY CLASS</a></li>
+              <li><a href="developmentclass.html">DEVELOPMENT CLASS</a></li>
+              <li><a href="professional.html">PROFESSIONAL CLASS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a href="#">INTERNATIONAL </a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#">WORLD FINALS 2025 &#9656;</a>
+            <ul class="submenu">
+                <li><a href="teamprofiles.html">TEAM PROFILES</a></li>
+                <li><a href="komatsuwilliamsacademy.html">KOMATSU-WILLIAMS ENGINEERING ACADEMY</a></li>
+                <li><a href="surveys.html">SURVEY</a></li>
+                <li><a href="clarifications.html">CLARIFICATIONS 2025</a></li>
+            </ul>
+        </li>
+
+          <li><a href="#">WHERE TO  FIND US</a></li>
+
+          <li class="has-submenu">
+            <a href="#">COUNTRY LIST &#9656;</a>
+            <ul class="submenu">
+              <li class="has-submenu"><a href="#">ALGERIA</a><ul class="submenu"><li><a href="algeria.html">Contact Algeria</a></li></ul></li>
+              <li class="has-submenu"><a href="#">AUSTRALIA</a><ul class="submenu"><li><a href="australia.html">Contact Australia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">BRAZIL</a><ul class="submenu"><li><a href="brazil.html">Contact Brazil</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAMBODIA</a><ul class="submenu"><li><a href="cambodia.html">Contact Cambodia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CANADA</a><ul class="submenu"><li><a href="algeria.html">Contact Canada</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAYMAN ISLANDS</a><ul class="submenu"><li><a href="#">RESOURCES(CAYMANS ISLANDS)</a></li><li><a href="#">CONTACTS (CAYMANS  ISLANDS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CHINA</a><ul class="submenu"><li><a href="china.html">Contact China</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UNITED KINGDOM</a><ul class="submenu"><li><a href="uk.html">Contact United Kingdom</a></li></ul></li>
+              <li class="has-submenu"><a href="#">COSTA RICA</a><ul class="submenu"><li><a href="costarika.html">Contact Costa RiCa</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CYPRUS</a><ul class="submenu"><li><a href="cyprus.html">Contact Cyprus</a></li></ul></li>
+              <li class="has-submenu"><a href="#">FRANCE</a><ul class="submenu"><li><a href="france.html">Contact France</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GREECE</a><ul class="submenu"><li><a href="greece.html">CONTACT (GR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GERMAN</a><ul class="submenu"><li><a href="german.html">CONTACTS (GER)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HONG KONG</a><ul class="submenu"><li><a href="hongkong.html">CONTACT (HK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HUNGARY</a><ul class="submenu"><li><a href="hungary.html">CONTACT (HU)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">INDIA</a><ul class="submenu"><li><a href="india.html">CONTACT (IND)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">ITALY</a><ul class="submenu"><li><a href="algeria.html">CONTACT (IT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JAPAN</a><ul class="submenu"><li><a href="japan.html">CONTACT (JP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JORDAN</a><ul class="submenu"><li><a href="resoucesjordan.html">RESOURCES(JORDAN)</a></li><li><a href="jordan.html">CONTACTS (JOR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">KUWAIT</a><ul class="submenu"><li><a href="kuwait.html">CONTACT (KUWAIT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">LUXEMBOURG</a><ul class="submenu"><li><a href="luxembourg.html">CONTACT (LX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MAURITIUS</a><ul class="submenu"><li><a href="maurtius.html">CONTACT (MAURITIUS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MEXICO</a><ul class="submenu"><li><a href="mexico.html">CONTACT (MEX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MALAYSIA</a><ul class="submenu"><li><a href="malaysia.html">CONTACT (MAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">NEPAL</a><ul class="submenu"><li><a href="nepal.html">CONTACT (NEPAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PANAMA</a><ul class="submenu"><li><a href="panama.html">CONTACT (PANAMA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">POLAND</a><ul class="submenu"><li><a href="poland.html">CONTACT (PL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PORTUGAL</a><ul class="submenu"><li><a href="portugal.html">CONTACT (PT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SINGAPORE</a><ul class="submenu"><li><a href="singapore.html">CONTACT (SIN)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SLOVENIA</a><ul class="submenu"><li><a href="slovia.html">CONTACT (SLO)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH AFRICA</a><ul class="submenu"><li><a href="southafrica.html">CONTACT (SA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SPAIN</a><ul class="submenu"><li><a href="spain.html">CONTACT (SP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SWITZERLAND</a><ul class="submenu"><li><a href="switzerland.html">CONTACT (SIW)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SAUDI ARABIA</a><ul class="submenu"><li><a href="saudiarabia.html">CONTACT (SAUDI)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH KOREA</a><ul class="submenu"><li><a href="southkorea.html">CONTACT (SK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UAE</a><ul class="submenu"><li><a href="uae.html">CONTACT (UAE)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">USA</a><ul class="submenu"><li><a href="usa.html">THE COMPETITION (USA)</a></li></ul></li>
+
+            </ul>
+        </li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">MORE &#8943;</a>
+        <ul class="submenu">
+            <li class="has-submenu">
+            <a href="#">RESOURCES &#9656;</a>
+            <ul class="submenu">
+                <li><a href="rules.html">RULES & REGULATIONS</a></li>
+                <li><a href="equipment.html">EQUIPMENTS</a></li>
+                <li><a href="downloads.html">DOWNLOADS</a></li>
+                <li class="has-submenu">
+                    <a href="#">SOFTWARE &#9656;</a>
+                    <ul class="submenu">
+                        <li><a href="autodesk.html">AUTODESK</a></li>
+                        <li><a href="ansys.html">ANSYS</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+            <li class="has-submenu">
+              <a href="#">MEDIA</a>
+            <ul  class="submenu">
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">IMPACT REPORT 24/25</a></li>
+              <li><a href="#">SUBSCRIBE</a></li>
+            </ul>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">CORPORATE</a>
+            <ul class="submenu">
+              <li><a href="#">PARTNERSHIPS</a></li>
+              <li><a href="#">SPONSORSHIPS</a></li>
+              <li><a href="#">FRANCHISING</a></li>
+            </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </li>
+    </ul>
+  </nav>
+  <section class="reports-bg">
+    <img loading="lazy" src="../assets/reportsbg.png" alt="Background image">
+  </section>
+  <section class="reports-introduction">
+    <h1>how stem racing is driving change: impact report 24/25</h1>
+    <p>At the beginning of this year, we launched our new identity: STEM Racing, Supported by Formula 1. This rebrand has taken us into an exciting new era and, as we reflect on a landmark year, we are proud to share our Impact Report for 2024/25.</p>
+    <p>​A celebration of all we have achieved over the past 12 months - from a phenomenal World Finals in Saudi Arabia to the launch of STEM Racing in Kenya, South Africa, Mali and Togo - we hope you enjoy recapping our incredible journey so far.</p>
+    <button><a href="https://online.fliphtml5.com/nopxf/qjqa/" target="_blank">DOWNLOAD REPORT</a></button>
+  </section>
+<section class="rotating-pictures-container">
+  <section class="rotating-pictures"></section>
+</section>
+  
+  <Section class="reports-cards">
+    <div class="report-card">
+        <div class="image2"><img loading="lazy" src="../assets/worldfinals2025.png"></div>
+        <div class="report-text">
+            <h1>world finals 2024</h1>
+            <p>​Held at Dhahran Expo, Saudi Arabia, the 2024 Aramco STEM Racing World Finals brought together 450+ students and educators from 25 countries. Over 55 teams competed in a three-day celebration of innovation, design, and engineering.</p>
+            <ul>
+                <h4>Key Moments:</h4>
+                <li>Dates: 23–26 November 2024 </li>
+                <li>Winners: Team evolut1on, Germany</li>
+                <li><b>Special Guest:</b> Fernando Alonso presented awards</li>
+                <li><b>Engineering Academy:</b> 10 students selected for Komatsu-Williams programme</li>
+                <li><b>Diversity: </b>1 in 3 participants were female.</li>
+            </ul>
+            <p><i>“We spent two years and thousands of hours on this. To win among so many talented teams is incredible.”</i></p>
+            <p><b><i>Theo Paulsen, <br /><b>Team Manager, evolut1on (World Champions)</i></b></p>
+        </div>
+    </div>
+
+    <div class="report-card">
+        <div class="report-text">
+            <h1>GLOBAL REACH - LOCAL IMPACT</h1>
+            <p>In 2024, STEM Racing gave more students hands-on access to engineering, technology and motorsport than ever before — powered by our partnership with Formula 1®.</p>
+            <ul>
+                <h4>Key Highlights:</h4>
+                <li>13 Grand Prix activations</li>
+                <li>​300+ students with exclusive paddock access</li>
+                <li>STEM Racing installations at major industry events</li>
+                <li>700-person pit-lane walk at Qatar Grand Prix</li>
+            </ul>
+            <p><b><i>Paddock Tours took place at:</i></b><br />Bahrain, Saudi Arabia, Australia, China, Miami, Monaco, UK, Hungary, Singapore, Austin, Qatar, Abu Dhabi, Mexico</p>
+            <p><b><i>Qatar Grand Prix Spotlight:</i></b><br /> One of our largest activations to date – a 700-person pit-lane walk offering students a rare, behind-the-scenes look at the world of F1®.</p>
+        </div>
+        <div class="image2"><img loading="lazy" src="../assets/globalreach.png"></div>
+    </div>
+
+    <div class="report-card">
+    <div class="image2"><img loading="lazy" src="../assets/openingdoors.png"></div>
+    <div class="report-text">
+        <h1>OPENING DOORS TO STEM CAREERS</h1>
+        <p>In 2024, we expanded access to STEM education by:
+            <ol>
+                <li>Engaging diverse students from across the globe</li>
+                <li>Partnering with leading teams and foundations</li>
+                <li>Delivering hands-on experiences that spark ambition</li>
+            </ol>
+        </p>
+        <h4>Key Highlights:</h4>
+        <ul class="highlight">
+            <li>120 students joined Make A Mark with Aston Martin at Silverstone.</li>
+            <li>​Karting activations with Fernando Alonso in China and Spain.</li>
+            <li>STEM sessions in Miami Gardens introducing local communities to engineering.</li>
+            <li>Workshops in Shanghai with Aston Martin, Aramco, Pedro de la Rosa and Jessica Hawkins.</li>
+            <li>Leadership workshop with Aleto Foundation and Aston Martin for underrepresented young talent.</li>
+            <li>Free STEM Racing kits delivered in Soweto with Empower Young Learners and Kliptown Youth Program (KYP).</li>
+        </ul>
+    </div>
+    </div>
+  </Section>
+  <HR class="section-border">
+
+  <footer>
+    <p>&copy; COPYRIGHTS<span id="year"></span> ALL RIGHTS RESERVED</p>
+  </footer>
+  <script src="../js/images.js"></script>
+  <script src="../js/script.js"></script>
+<script src="../js/form.js"></script>
+</body>
+</html>

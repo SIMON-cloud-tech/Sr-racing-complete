@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../assets/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study</title>
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/work.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+     <img loading="lazy" src="../assets/logo.png" alt="Logo">
+
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="menu" id="menu">
+      <li  class="has-submenu">
+        <a href="#">HOME </a>
+        <ul class="submenu">
+            <li><a href="cookies.html">COOKIES POLICY</a></li>
+            <li><A href="privacy.html">PRIVACY POLICY</A></li>
+        </ul>
+    </li>
+
+      <li class="has-submenu">
+        <a href="#">THE CHALLENGE </a>
+        <ul class="submenu">
+          <li><a href="#">ABOUT THE CHALLENGE</a></li>
+          <li class="has-submenu">
+            <a href="#">BASIC STEPS &#9656;</a>
+            <ul class="submenu">
+                <li><A href="register.html">REGISTER</A></li>
+                <li><a href="learn.html">LEARN</a></li>
+                <li><a href="compete.html">COMPETE</a></li>
+                <li><a href="enrol.html">GLOBAL ENROLMENT</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">HOW IT WORKS</a></li>
+          <li class="has-submenu">
+            <a href="#">CLASSES OF ENTRY &#9656;</a>
+            <ul class="submenu">
+              <li><a href="primaryclass.html">PRIMARY CLASS</a></li>
+              <li><a href="entryclass.html">ENTRY CLASS</a></li>
+              <li><a href="developmentclass.html">DEVELOPMENT CLASS</a></li>
+              <li><a href="professional.html">PROFESSIONAL CLASS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a href="#">INTERNATIONAL </a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#">WORLD FINALS 2025 &#9656;</a>
+            <ul class="submenu">
+                <li><a href="teamprofiles.html">TEAM PROFILES</a></li>
+                <li><a href="komatsuwilliamsacademy.html">KOMATSU-WILLIAMS ENGINEERING ACADEMY</a></li>
+                <li><a href="surveys.html">SURVEY</a></li>
+                <li><a href="clarifications.html">CLARIFICATIONS 2025</a></li>
+            </ul>
+        </li>
+
+          <li><a href="#">WHERE TO  FIND US</a></li>
+
+          <li class="has-submenu">
+            <a href="#">COUNTRY LIST &#9656;</a>
+            <ul class="submenu">
+              <li class="has-submenu"><a href="#">ALGERIA</a><ul class="submenu"><li><a href="algeria.html">Contact Algeria</a></li></ul></li>
+              <li class="has-submenu"><a href="#">AUSTRALIA</a><ul class="submenu"><li><a href="australia.html">Contact Australia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">BRAZIL</a><ul class="submenu"><li><a href="brazil.html">Contact Brazil</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAMBODIA</a><ul class="submenu"><li><a href="cambodia.html">Contact Cambodia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CANADA</a><ul class="submenu"><li><a href="algeria.html">Contact Canada</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAYMAN ISLANDS</a><ul class="submenu"><li><a href="#">RESOURCES(CAYMANS ISLANDS)</a></li><li><a href="#">CONTACTS (CAYMANS  ISLANDS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CHINA</a><ul class="submenu"><li><a href="china.html">Contact China</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UNITED KINGDOM</a><ul class="submenu"><li><a href="uk.html">Contact United Kingdom</a></li></ul></li>
+              <li class="has-submenu"><a href="#">COSTA RICA</a><ul class="submenu"><li><a href="costarika.html">Contact Costa RiCa</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CYPRUS</a><ul class="submenu"><li><a href="cyprus.html">Contact Cyprus</a></li></ul></li>
+              <li class="has-submenu"><a href="#">FRANCE</a><ul class="submenu"><li><a href="france.html">Contact France</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GREECE</a><ul class="submenu"><li><a href="greece.html">CONTACT (GR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GERMAN</a><ul class="submenu"><li><a href="german.html">CONTACTS (GER)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HONG KONG</a><ul class="submenu"><li><a href="hongkong.html">CONTACT (HK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HUNGARY</a><ul class="submenu"><li><a href="hungary.html">CONTACT (HU)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">INDIA</a><ul class="submenu"><li><a href="india.html">CONTACT (IND)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">ITALY</a><ul class="submenu"><li><a href="algeria.html">CONTACT (IT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JAPAN</a><ul class="submenu"><li><a href="japan.html">CONTACT (JP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JORDAN</a><ul class="submenu"><li><a href="resoucesjordan.html">RESOURCES(JORDAN)</a></li><li><a href="jordan.html">CONTACTS (JOR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">KUWAIT</a><ul class="submenu"><li><a href="kuwait.html">CONTACT (KUWAIT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">LUXEMBOURG</a><ul class="submenu"><li><a href="luxembourg.html">CONTACT (LX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MAURITIUS</a><ul class="submenu"><li><a href="maurtius.html">CONTACT (MAURITIUS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MEXICO</a><ul class="submenu"><li><a href="mexico.html">CONTACT (MEX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MALAYSIA</a><ul class="submenu"><li><a href="malaysia.html">CONTACT (MAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">NEPAL</a><ul class="submenu"><li><a href="nepal.html">CONTACT (NEPAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PANAMA</a><ul class="submenu"><li><a href="panama.html">CONTACT (PANAMA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">POLAND</a><ul class="submenu"><li><a href="poland.html">CONTACT (PL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PORTUGAL</a><ul class="submenu"><li><a href="portugal.html">CONTACT (PT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SINGAPORE</a><ul class="submenu"><li><a href="singapore.html">CONTACT (SIN)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SLOVENIA</a><ul class="submenu"><li><a href="slovia.html">CONTACT (SLO)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH AFRICA</a><ul class="submenu"><li><a href="southafrica.html">CONTACT (SA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SPAIN</a><ul class="submenu"><li><a href="spain.html">CONTACT (SP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SWITZERLAND</a><ul class="submenu"><li><a href="switzerland.html">CONTACT (SIW)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SAUDI ARABIA</a><ul class="submenu"><li><a href="saudiarabia.html">CONTACT (SAUDI)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH KOREA</a><ul class="submenu"><li><a href="southkorea.html">CONTACT (SK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UAE</a><ul class="submenu"><li><a href="uae.html">CONTACT (UAE)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">USA</a><ul class="submenu"><li><a href="usa.html">THE COMPETITION (USA)</a></li></ul></li>
+
+            </ul>
+        </li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">MORE &#8943;</a>
+        <ul class="submenu">
+            <li class="has-submenu">
+            <a href="#">RESOURCES &#9656;</a>
+            <ul class="submenu">
+                <li><a href="rules.html">RULES & REGULATIONS</a></li>
+                <li><a href="equipment.html">EQUIPMENTS</a></li>
+                <li><a href="downloads.html">DOWNLOADS</a></li>
+                <li class="has-submenu">
+                    <a href="#">SOFTWARE &#9656;</a>
+                    <ul class="submenu">
+                        <li><a href="autodesk.html">AUTODESK</a></li>
+                        <li><a href="ansys.html">ANSYS</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+            <li class="has-submenu">
+              <a href="#">MEDIA</a>
+            <ul  class="submenu">
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">IMPACT REPORT 24/25</a></li>
+              <li><a href="#">SUBSCRIBE</a></li>
+            </ul>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">CORPORATE</a>
+            <ul class="submenu">
+              <li><a href="#">PARTNERSHIPS</a></li>
+              <li><a href="#">SPONSORSHIPS</a></li>
+              <li><a href="#">FRANCHISING</a></li>
+            </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </li>
+    </ul>
+  </nav>
+  <section class="case">
+    <div class="image">
+        <img loading="lazy" src="../assets/casestudybg.jpg" alt="Background-Image">
+    </div>
+  </section>
+  <section class="introduce">
+    <h1>SUPERSTAR ALUMNI: CASE STUDIES</h1>
+    <P>Opening students’ eyes to careers they never would have known about, industries they may never have thought of, and setting them on the ideal track to achieving a role within them, STEM Racing serves as a catalyst for pupil progression. </P>
+    <P>​And we have the alumni to prove it. From dream roles within F1 teams through to positions at some of the world’s most renowned organisations, including Space X, BAE, and NASA, our ever-growing network of past pupils serves as indisputable proof of the potential this programme unleashes.</P>
+  </section>
+  <section class="profile-cards">
+    <div class="profile-card">
+        <div class="text">
+            <h1>MARY ALDERSLEY</h1>
+            <ul>
+                <li><b>Current role:</b> Coordinator, Transmission and Component Assembly</li>
+                <li><b>Company: </b> <a href="https://www.mclaren.com/racing/formula-1/" target="_blank">McLaren Formula 1</a></li>
+                <li><b>Country: </b> <a href="https://www.mclaren.com/racing/formula-1/" target="_blank"> F1 in Schools UK</a></li>
+                <li><b>Years competing:</b> 2013 – 2014</li>
+                <li><b>School:</b> <a href="https://www.lythamhigh.lancs.sch.uk/" target="_blank">Lytham St Annes High School</a></li>
+            </ul>
+            <p>Now working for McLaren Formula 1 as a Coordinator in the Transmission and Component Assembly team, Mary Aldersley has embarked on a dream career within F1,
+                 the roots of which began with F1 in Schools when she was 16 years old.</p>
+                 <br />
+            <p>​In this case study, Mary talks us through her journey from classroom to competition, and beyond.</p>
+        </div>
+        <div class="image">
+            <img loading="lazy" src="../assets/casestudy1.png" alt="Case study">
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="image">
+            <img loading="lazy" src="../assets/casestudy2.png" alt="Case study">
+        </div>
+        <div class="text">
+            <h1>EMILY LATHAM</h1>
+            <ul>
+                <li>Current role:<b></b> Marketing Planning and Strategy Manager, Europe</li>
+                <li>Company:<b></b><a href="https://www.bmw.co.uk/en/index.html" target="_blank"> BMW</a></li>
+                <li>Country:<b></b><a href="https://www.mclaren.com/racing/formula-1/" target="_blank"> F1 in Schools UK</a></li>
+                <li>Years of Competing:<b></b> 2009 – 2011</li>
+                <li><b>School:</b><a href="https://www.sjp.essex.sch.uk/" target="_blank"> St. John Payne Catholic Comprehensive School</a></li>
+            </ul>
+            <p>Now working for BMW in the position of Marketing Planning and Strategy Manager, Europe, Emily has had an incredibly successful career journey since competing in F1 in Schools.</p>
+            <p>In this case study she explains the impact the competition had on her career choices, the valuable skills she learned while taking part, and the unforgettable memories she made while taking part.</p>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="text">
+            <h1></h1>
+            <ul>
+                <li><b>Current role:</b> Mechanical Structural Analysis Engineer</li>
+                <li><b>Company:</b><a href="https://www.mercedesamgf1.com/" target="_blank"> Mercedes-AMG PETRONAS F1 Team</a></li>
+                <li><b>Country:<b></b><a href="https://www.mclaren.com/racing/formula-1/" target="_blank"> F1 in Schools UK</a></li>
+                <li><b>Years of Competing:</b>  2013</li>
+                <li><b>School:</b><a href="https://www.bradfield.sheffield.sch.uk/"> Bradfield School</a>​</li>
+            </ul>
+            <p>Now working as a Mechanical Structural Analysis Engineer, George’s role sees him leverage engineering theory and computer modelling to ensure the structural reliability, safety, and optimum performance of mechanical components.</p>
+            <p>In this case study George discusses how his journey began with F1 in Schools, taking him on a incredibly successful career path.</p>
+        </div>
+        <div class="image">
+            <img loading="lazy" src="../assets/casstudy3.png">
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="image">
+            <img loading="lazy" src="../assets/casstudy4.png" alt="ARMY MARTIN">
+        </div>
+        <div class="text">
+            <h1>ARMY MARTIN</h1>
+            <ul>
+                <li><b>Current role:</b> Finance Graduate</li>
+                <li><b>Company:</b><a href="https://www.mercedes-amg-hpp.com/">  Mercedes AMG HPP</a></li>
+                <li><b>Country:<b></b><a href="https://www.mclaren.com/racing/formula-1/" target="_blank"> F1 in Schools UK</a></li>
+                <li><b>Years of competing:</b> 2013 – 2016</li>
+                <li><b>School:</b><a href="https://www.denbighhigh.luton.sch.uk/" target="_blank"> Denbigh High School</a></li>
+            </ul>
+            <p>Now working in the Finance department of Mercedes AMG HPP, Amy’s F1 in Schools journey has taken her from being part of two-time World Finalists Tachyon to her dream career within an F1 team, with some fantastic highlights on the way. </p>
+            <p>This case study is a brilliant example of what is possible when you grasp the opportunities F1 in Schools provides with both hands. </p>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="text">
+            <h1>KATELYN CHELBERG</h1>
+            <ul>
+                <li><b>Current role:</b>  Master of Engineering Graduate</li>
+                <li><b>Company:</b><a href="https://www.cam.ac.uk/" target="_blank"> University of Cambridge</a></li>
+                <li><b>Country:</b><a href="https://www.mclaren.com/racing/formula-1/" target="_blank"> F1 in Schools UK</a></li>
+                <li><b>Years of competing:</b>  2015 – 2017</li>
+                <li><b>School:</b><a href="https://www.rmays.org/" target="_blank"> Robert May’s School</a></li>
+            </ul>
+            <P>Having studied Engineering at the University of Cambridge, Katelyn graduated with Honours with Distinction in 2023, and is now set to embark on a career in operations consulting. </P>
+            <p>Taking part in F1 in Schools as team leader of Enigma UK, Katelyn's case study explains how she was first introduced to the world of engineering through the competition. ​</p>
+        </div>
+        <div class="image">
+            <img loading="lazy" src="../assets/casestudy5.png" alt="KYRIAKOS THEOFANIDIS">
+        </div>
+    </div>
+        <div class="profile-card">
+        <div class="image">
+            <img loading="lazy" src="../assets/casestudy6.png" alt="KYRIAKOS THEOFANIDIS">
+        </div>
+        <div class="text">
+            <h1>KYRIAKOS THEOFANIDIS</h1>
+            <ul>
+                <li><b>Current role:</b> F1 Mechanical Engineer - Academy Trainee</li>
+                <li><b>Company:</b><a href="https://www.mercedes-amg-hpp.com/">  Mercedes AMG HPP</a></li>
+                <li><b>Country:</b><a href="https://f1inschoolsgreece.com/" target="_blank"> F1 in Schools Greece</a></li>
+                <li><b>Years of competing:</b>  2015 – 2016</li>
+                <li><b>School:</b><a href="https://mandoulides.edu.gr/en/" target="_blank"> Mandoulides Schools</a></li>
+            </ul>
+            <p>Following his childhood passion for motorsports, Kyriakos went on to have an incredibly successful F1 in Schools journey.</p>
+            <p>Becoming Mechanical Engineer for Infinite Racing - a team which achieved the ultimate title of World Champions  - this talented engineer continued to pursue his love of motorsports throughout university, before securing a dream role at Mercedes AMG HPP.</p>
+        </div>
+    </div>
+     <div class="profile-card">
+        <div class="text">
+            <h1>LEWIS FOWLER</h1>
+            <ul>
+                <li><b>Current role:</b> Graduate Design Engineer - Aerodynamics</li>
+                <li><b>Company:</b><a href="https://www.astonmartinf1.com/en-GB/" target="_blank"> Aston Martin Aramco Formula 1® Team</a></li>
+                <li><b>Country:</b><a href="https://www.mclaren.com/racing/formula-1/" target="_blank"> F1 in Schools UK</a></li>
+                <li><b>Years of competing:</b>  2016 - 2019</li>
+                <li><b>School:</b><a href="https://www.queenelizabeths.kent.sch.uk/" target="_blank"> Queen Elizabeth’s Grammar School</a></li>
+            </ul>
+            <P>Following a three-year F1 in Schools journey which saw him form part of Evolve UK - the F1 in Schools 2019 World Champions - Lewis has pursued his passion for engineering all the way through university to a dream role at Aston Martin Aramco Formula 1 Team.</P>
+            <P>Now working in the field of aerodynamics, Lewis explains how F1 in Schools helped him to progress from classroom to garage.</P>
+        </div>
+        <div class="image">
+            <img loading="lazy" src="../assets/casestudy7.png" alt="KYRIAKOS THEOFANIDIS">
+        </div>
+    </div>
+         <div class="profile-card">
+        <div class="image">
+            <img loading="lazy" src="../assets/casestudy8.png" alt="KYRIAKOS THEOFANIDIS">
+        </div>
+        <div class="text">
+            <h1>GOERGE STONOR</h1>
+            <ul>
+                <li><b>Company:</b><a href="https://www.redbullpowertrains.com/int-en" target="_blank"> Red Bull Powertrains</a></li>
+                <li><b>Country:</b><a href="https://www.mclaren.com/racing/formula-1/" target="_blank"> F1 in Schools UK</a></li>
+                <li><b>Years of competing:</b>  2016 - 2019</li>
+                <li><b>School:</b><a href="https://www.queenelizabeths.kent.sch.uk/" target="_blank"> Queen Elizabeth’s Grammar School</a></li>
+            </ul>
+            <P>Part of Evolve UK alongside Lewis,  George had an incredibly successful journey in the competition, and has continued to excel.</P>
+            <P>​Having been awarded a full scholarship at UCL as part of his World Champions prize, George graduated with a degree in Mechanical Engineering, and is currently undertaking a placement year as a Mechanical Design Engineer at Red Bull Powertrains.</P>
+        </div>
+    </div>
+  </section>
+  <hr class="section-border">
+  <footer>
+    <p>&copy; COPYRIGHTS <span id="year"></span> ALL RIGHTS RESERVED</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="../js/map.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/form.js"></script>
+</body>
+</html>

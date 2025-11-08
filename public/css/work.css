@@ -1,0 +1,660 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.work{
+    padding: 20px 10px;
+    background-image: url(/assets/bgworks.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-size: cover;
+}
+.work h1{
+    text-align: start;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 10px 5px;
+    margin-left: 1rem;
+}
+.work p{
+    padding: 5px 15px;
+    margin-left: 1rem;
+    line-height: 1.4rem;
+    font-size: 18px;
+}
+.image{
+    height: 600px;
+    width: 90%;
+    padding: 10px 30px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.works-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+.work-card{
+    display: block;
+    padding: 10px 40px;
+}
+.work-card h1, p{
+  margin-left: 1rem;
+}
+.work-card p{
+  font-size: 18px;
+}
+.work-card h1{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: start;
+    padding: 5px 0;
+}
+.section-border{  
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* faint white/gray */
+}
+/*HREF TAGS*/
+a {
+  color: inherit; /* or set a custom color like #ccc */
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.575); /* ultra-faint white */
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  color: #ccc;
+}
+/*HEREF TAGS*/
+/*CASe STUDY*/
+.case{
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro{
+    padding: 10px 30px;
+}
+.intro h1{
+    font-style: italic;
+    font-size: xx-large;
+    font-size: 55px;
+    font-weight: bolder;
+}
+.intro p, h1{
+  margin-left: 0;
+  padding: 10px 5px;
+}
+.intro p{
+    font-size: 18px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.text{
+    padding: 10px 30px;
+    max-width: 800px;
+    width: 100%;
+}
+.text ul{
+    margin: 1rem;
+}
+.text ul li{
+    list-style: none;
+    padding: 0.2rem;
+}
+.text a{
+    text-decoration: underline;
+    font-weight: lighter;
+    padding-left: 0.3rem;
+    color: whitesmoke;
+}
+.text h1{
+    font-style: italic;
+    font-weight: bolder;
+    padding: 5px 10px;
+    font-size: x-large;
+}
+.profile-card .image{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+.profile-card .image img{
+    width: 100%;
+    height: 100%;
+}
+.profile-card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    gap: 20px;
+}
+.profile-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/*CASE STUDY*/
+
+/*Primary class*/
+.introd{
+    width: 100%;
+    height: 300px;
+}
+.introd img{
+    width: auto;
+    height: auto;
+    padding: 40px 10px;
+}
+.text1{
+    padding-left: 4rem;
+    width: 100%;
+    max-width: 700px;
+}
+#color{
+  color: gold;
+}
+#color1{
+  color: rgb(160, 4, 199);
+}
+.text1 h1{
+    margin-left: 1rem;
+    padding: 20px 10px;
+    font-style: italic;
+    color: rgb(96, 208, 252);
+}
+.text1 h2{
+    margin-left: 1rem;
+}
+.text1 p{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.images, .texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.images{
+    margin-top: 0;
+    padding: 0;
+}
+.imagI{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 20px;
+}
+.imag{
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+}
+.imag img{
+    width: 100%;
+    height: 100%;
+}
+.sections-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.steps{
+    display: flex;
+    padding: 40px 20px;
+    background-color: black;
+    gap: 20px;
+}
+.card{
+    width: 250px;
+    height: 250px;
+}
+.card h1{
+  font-style: italic;
+  font-size: xx-large;
+}
+.card img{
+    width: 100%;
+    height: 80%;
+}
+/*Primary class*/
+/*professional*/
+.sections{
+  padding: 40px 10px;
+}
+.textie{
+  display: flex;
+  flex-wrap: wrap;
+}
+.image1{
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem;
+}
+.image1 img{
+  width: 100%;
+  height: 100%;
+}
+.intro p, #color1{
+  margin-left: 1rem;
+}
+/*professional*/
+/*TEAM PROFILES*/
+.image3{
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+}
+.case1 img{
+  width: 100%;
+  height: 600px;
+}
+.main{
+  color: white;
+}
+#main{
+  padding: 30px 10px;
+  text-align: center;
+}
+.profile{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 40px;
+}
+.profile-image{
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  height: auto;
+}
+.profile-image img{
+  width: 100%;
+  height: 100%;
+}
+.description{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+.description p{
+  letter-spacing: 0.5px;
+}
+.description h1{
+  font-style: italic;
+  color: white;
+  text-align: start;
+  padding-inline: 0;
+  text-transform: uppercase;
+}
+.description ul{
+  margin-left: 2rem;
+  padding: 10px 30px;
+}
+.description ul li{
+  padding: 3px 4px;
+}
+/*TEAM PROFILES*/
+
+/*ACADEMY OF KOMATSU*/
+.komatsu-class{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.komatsu-class h1{
+  font-style: italic;
+  font-size: xx-large;
+}
+.komatsu-class h3{
+  text-align: center;
+}
+.paragraph{
+  padding: 20px 10px;
+  text-align: center;
+  letter-spacing: 0.9px;
+}
+.paragraph a{
+  text-decoration: underline;
+  color: whitesmoke;
+}
+.paragraph h4{
+  text-align: center;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card1{
+  display: flex;
+  padding: 10px 20px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image2{
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+.image2 img{
+  width: 100%;
+  height: 100%;
+}
+.video-section {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #000; /* optional: gives contrast */
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* optional: limits width on large screens */
+  margin: auto;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/*ACADEMY OF KOMATSU*/
+
+/*CLARIFICATION*/
+.main-body{
+  display: flex;
+  flex-direction: column;
+}
+.main-body-description{
+  padding: 20px 50px;
+  display: flex;
+  margin-bottom: 2rem;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+#title{
+  text-transform: uppercase;
+  font-style: italic;
+  color: goldenrod;
+  font-size: 20px;
+}
+.description1{
+  margin-top: 1rem;
+}
+.description1 h4{
+  margin-left: 0;
+}
+.description1 p{
+  letter-spacing: 0.9px;
+}
+.part{
+  padding: 20px 50px;
+  text-align: start;
+}
+.part p{
+  letter-spacing: 0.9px;
+}
+.main-body h1, h3{
+  padding: 0 50px;
+}
+.main-body h1{
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight:bolder;
+}
+.main-body h3{
+  font-size: 32px;
+  text-transform: capitalize;
+  color: gold;
+  font-weight: bold;
+}
+.case11{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image33{
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  padding: 60px 10px;
+}
+.image33 img{
+  width: 100%;
+  height: 100%;
+}
+/*CLARIFICATION*/
+/*RULES*/
+.rulesbg{
+  display: flex;
+  justify-content: center;    /* horizontal centering */
+  align-items: center;        /* vertical centering */
+  height: 300px;           /* full viewport height */
+  background-image: url('/assets/rulesbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rulesword{
+  text-align: center;
+  margin-top: 5px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.rulesword h2{
+  font-size: 35px;
+}
+.rulesword h1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+#rules-image {
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  height: 400px;             /* full viewport height */
+  padding: 90px 10px;
+  margin-top: 2rem;
+}
+
+.rule-image img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+.uploads{
+  margin-top: 3rem;
+}
+.upload{
+  display: flex;
+  justify-content: space-around;
+}
+.upload-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+.upload-image img{
+  width: 100%;
+  height: 80%;
+}
+.upload-image h2{
+  font-size: 30px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+#colored{
+  color: yellow;
+}
+.ends{
+  width: 60%;
+  height: 40px;
+  float: inline-end;
+  display: flex;
+  margin-top: 2rem;
+  gap: 7px;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+#end img{
+  width: 20%;
+  height: 100%;
+}
+.ends img{
+  width: 20%;
+  height: 100%;
+}
+#end{
+  text-align: start;
+}
+#end1{
+  text-align: end;
+}
+.project{
+  margin-top: 3rem;
+}
+.project  h1{
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 10px 30px;
+  font-style: italic;
+}
+.project-management{
+  padding: 40px 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.project-words{
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  letter-spacing: 0.9px;
+}
+.rule-images{
+  width: 100%;
+  max-width: 400px;
+}
+.rule-images img{
+  width: 100%;
+  height: 100%;
+}
+.project-ends{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 30px;
+  padding: 30px 10px;
+}
+.project-ends h1{
+  text-align: start;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.project-ends p{
+  text-align: start;
+  margin-left: 2rem;
+  letter-spacing: 0.9px;
+}
+.project-ends-here{
+  margin-left: 2rem;
+  padding: 50px 10px;
+}
+/*RULES*/
+footer{
+    padding: 40px 10px;
+    margin-top: 1rem;
+    color: #ccc;
+    font-size: 12px;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+  /*primary*/
+  .texts, .images, .sections-container, .steps, .profile-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  /*professional*/
+  .textie{
+    align-items: center;
+    justify-content: center;
+  }
+  /*team profiles*/
+  .profile{
+    align-items: center;
+    justify-content: center;
+  }
+  /*komatsu*/
+  .card1{
+    align-items: center;
+    justify-content: center;
+  }
+  /*rules*/
+  .upload, .project-management{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .image{
+    flex: 1;
+    height: 400px;
+    padding-top: 30px;
+  }
+  .work{
+    height:auto;
+    width: 100%;
+    background-position: center;
+  }
+  .introd{
+    width: 90vw;
+    height: auto;
+  }
+  .introd img{
+    transform: scaleX(0.7);
+  }
+  .imag{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
