@@ -7,9 +7,11 @@ const enrolRoutes = require('../routes/enrol');
 const newsletterRoute = require('../routes/newsletter');
 require('dotenv').config();
 
+const app = express();
+
+// ✅ Add this line immediately after initializing Express
 app.set('trust proxy', 1);
 
-const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
