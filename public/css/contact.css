@@ -2,6 +2,24 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 /* Section containing scrollable form */
+.enrollment{
+  width: 100%;
+  height: 200px;
+  color: white;
+  padding: 10px 5px;
+}
+.enrol{
+  width: 100%;
+  height: 100%;
+}
+.enrol h1{
+  font-size: 45px;
+  margin: none;
+  padding: none;
+}
+.enrol p{
+  font-size: 18px;
+}
 .contact-section {
   height: 100vh;              /* Section visible height */
   width: 100%;
@@ -216,7 +234,7 @@ h1 {
 input, select, textarea {
   padding: 15px 20px;
   background-color: transparent;
-  color: #fff;
+  color: #232323;
   border: 0.06px solid #ccc;
   border-style: inset;
 }
@@ -361,3 +379,15 @@ footer{
 }
 
 /*mobile responsiveness*/
+
+@media (max-width: 600px) {
+  .form-container{
+    width: 100%;
+  }
+  .contact-section{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px auto;
+    max-width: 90vw;
+  }
+}

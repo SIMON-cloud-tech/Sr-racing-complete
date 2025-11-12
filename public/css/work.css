@@ -158,7 +158,7 @@ a {
     padding: 40px 10px;
 }
 .text1{
-    padding-left: 4rem;
+    padding-left: 1rem;
     width: 100%;
     max-width: 700px;
 }
@@ -190,7 +190,7 @@ a {
 }
 .images{
     margin-top: 0;
-    padding: 0;
+    padding: 10px 30px;
 }
 .imagI{
   width: 100%;
@@ -283,7 +283,7 @@ a {
 }
 .profile-image img{
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .description{
   display: flex;
@@ -295,6 +295,8 @@ a {
 }
 .description p{
   letter-spacing: 0.5px;
+  font-size: 20px;
+  letter-spacing: 0.8px;
 }
 .description h1{
   font-style: italic;

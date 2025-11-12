@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../assets/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/news.css">
+  <link rel="stylesheet" href="../css/newsform.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+      
+    <nav class="navbar">
+    <div class="logo">
+      <img loading="lazy" src="../assets/logo.png" alt="STEM RACING Logo">
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="menu" id="menu">
+      <li  class="has-submenu">
+        <a href="#">HOME </a>
+        <ul class="submenu">
+            <li><a href="cookies.html">COOKIES POLICY</a></li>
+            <li><A href="privacy.html">PRIVACY POLICY</A></li>
+        </ul>
+    </li>
+
+      <li class="has-submenu">
+        <a href="#">THE CHALLENGE </a>
+        <ul class="submenu">
+          <li><a href="#">ABOUT THE CHALLENGE</a></li>
+          <li class="has-submenu">
+            <a href="#">BASIC STEPS &#9656;</a>
+            <ul class="submenu">
+                <li><A href="register.html">REGISTER</A></li>
+                <li><a href="learn.html">LEARN</a></li>
+                <li><a href="compete.html">COMPETE</a></li>
+                <li><a href="enrol.html">GLOBAL ENROLMENT</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">HOW IT WORKS</a></li>
+          <li class="has-submenu">
+            <a href="#">CLASSES OF ENTRY &#9656;</a>
+            <ul class="submenu">
+              <li><a href="primaryclass.html">PRIMARY CLASS</a></li>
+              <li><a href="entryclass.html">ENTRY CLASS</a></li>
+              <li><a href="developmentclass.html">DEVELOPMENT CLASS</a></li>
+              <li><a href="professional.html">PROFESSIONAL CLASS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a href="#">INTERNATIONAL </a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#">WORLD FINALS 2025 &#9656;</a>
+            <ul class="submenu">
+                <li><a href="teamprofiles.html">TEAM PROFILES</a></li>
+                <li><a href="komatsuwilliamsacademy.html">KOMATSU-WILLIAMS ENGINEERING ACADEMY</a></li>
+                <li><a href="surveys.html">SURVEY</a></li>
+                <li><a href="clarifications.html">CLARIFICATIONS 2025</a></li>
+            </ul>
+        </li>
+
+          <li><a href="#">WHERE TO  FIND US</a></li>
+
+          <li class="has-submenu">
+            <a href="#">COUNTRY LIST &#9656;</a>
+            <ul class="submenu">
+              <li class="has-submenu"><a href="#">ALGERIA</a><ul class="submenu"><li><a href="algeria.html">Contact Algeria</a></li></ul></li>
+              <li class="has-submenu"><a href="#">AUSTRALIA</a><ul class="submenu"><li><a href="australia.html">Contact Australia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">BRAZIL</a><ul class="submenu"><li><a href="brazil.html">Contact Brazil</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAMBODIA</a><ul class="submenu"><li><a href="cambodia.html">Contact Cambodia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CANADA</a><ul class="submenu"><li><a href="canada.html">Contact Canada</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAYMAN ISLANDS</a><ul class="submenu"><li><a href="caymanresources.html">RESOURCES(CAYMANS ISLANDS)</a></li><li><a href="cayman.html">CONTACTS (CAYMANS  ISLANDS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CHINA</a><ul class="submenu"><li><a href="china.html">Contact China</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UNITED KINGDOM</a><ul class="submenu"><li><a href="uk.html">Contact United Kingdom</a></li></ul></li>
+              <li class="has-submenu"><a href="#">COSTA RICA</a><ul class="submenu"><li><a href="costarika.html">Contact Costa RiCa</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CYPRUS</a><ul class="submenu"><li><a href="cyprus.html">Contact Cyprus</a></li></ul></li>
+              <li class="has-submenu"><a href="#">FRANCE</a><ul class="submenu"><li><a href="france.html">Contact France</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GREECE</a><ul class="submenu"><li><a href="greece.html">CONTACT (GR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GERMAN</a><ul class="submenu"><li><a href="german.html">CONTACTS (GER)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HONG KONG</a><ul class="submenu"><li><a href="hongkong.html">CONTACT (HK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HUNGARY</a><ul class="submenu"><li><a href="hungary.html">CONTACT (HU)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">INDIA</a><ul class="submenu"><li><a href="india.html">CONTACT (IND)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">ITALY</a><ul class="submenu"><li><a href="italy.html">CONTACT (IT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JAPAN</a><ul class="submenu"><li><a href="japan.html">CONTACT (JP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JORDAN</a><ul class="submenu"><li><a href="caymanresources.html">RESOURCES(JORDAN)</a></li><li><a href="jordan.html">CONTACTS (JOR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">KUWAIT</a><ul class="submenu"><li><a href="kuwait.html">CONTACT (KUWAIT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">LUXEMBOURG</a><ul class="submenu"><li><a href="luxembourg.html">CONTACT (LX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MAURITIUS</a><ul class="submenu"><li><a href="mauritius.html">CONTACT (MAURITIUS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MEXICO</a><ul class="submenu"><li><a href="mexico.html">CONTACT (MEX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MALAYSIA</a><ul class="submenu"><li><a href="malaysia.html">CONTACT (MAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">NEPAL</a><ul class="submenu"><li><a href="nepal.html">CONTACT (NEPAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PANAMA</a><ul class="submenu"><li><a href="panama.html">CONTACT (PANAMA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">POLAND</a><ul class="submenu"><li><a href="poland.html">CONTACT (PL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PORTUGAL</a><ul class="submenu"><li><a href="portugal.html">CONTACT (PT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SINGAPORE</a><ul class="submenu"><li><a href="singapore.html">CONTACT (SIN)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SLOVENIA</a><ul class="submenu"><li><a href="slovenia.html">CONTACT (SLO)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH AFRICA</a><ul class="submenu"><li><a href="southafrica.html">CONTACT (SA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SPAIN</a><ul class="submenu"><li><a href="spain.html">CONTACT (SP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SWITZERLAND</a><ul class="submenu"><li><a href="switzerland.html">CONTACT (SIW)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SAUDI ARABIA</a><ul class="submenu"><li><a href="saudia.html">CONTACT (SAUDI)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH KOREA</a><ul class="submenu"><li><a href="southkorea.html">CONTACT (SK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UAE</a><ul class="submenu"><li><a href="uae.html">CONTACT (UAE)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">USA</a><ul class="submenu"><li><a href="usacompetition.html">THE COMPETITION(USA)</a></li><li><a href="usa.html">CONTACTS (USA)</a></li></ul></li>
+
+            </ul>
+        </li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">MORE &#8943;</a>
+        <ul class="submenu">
+            <li class="has-submenu">
+            <a href="#">RESOURCES &#9656;</a>
+            <ul class="submenu">
+                <li><a href="rules.html">RULES & REGULATIONS</a></li>
+                <li><a href="equipment.html">EQUIPMENTS</a></li>
+                <li><a href="downloads.html">DOWNLOADS</a></li>
+                <li><a href="freecourse.html">Free courses.</a></li>
+                <li class="has-submenu">
+                    <a href="#">SOFTWARE &#9656;</a>
+                    <ul class="submenu">
+                        <li><a href="autodesk.html">AUTODESK</a></li>
+                        <li><a href="ansys.html">ANSYS</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+            <li class="has-submenu">
+              <a href="#">MEDIA</a>
+            <ul  class="submenu">
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="reports.html">IMPACT REPORT 24/25</a></li>
+              <li><a href="newsletter.html">SUBSCRIBE</a></li>
+            </ul>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">CORPORATE</a>
+            <ul class="submenu">
+              <li><a href="partnerships.html">PARTNERSHIPS</a></li>
+              <li><a href="sponsership.html">SPONSORSHIPS</a></li>
+              <li><a href="franchising.html">FRANCHISING</a></li>
+            </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </li>
+    </ul>
+  </nav>
+  <section class="form-body">
+<section class="cards">
+  <div class="card">
+        <h1>December 10th, 2024</h1>
+        <h5>12/10/2024<i></i> <a id="commentCount" href="comment8.html">0 comments</a></h5>
+        <h1>evolut1on’ from Germany announced as ​Aramco F1 in Schools 2024 World Champions</h1>
+        <div class="video">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/l6_LUwkHGjk?si=Jp65pvZ_5ZBQ7o_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+            <p>26 November 2024: The winners of the Aramco F1 in Schools 2024 World Finals were announced as evolut1on from Karl-Maybach-Gymnasium in Germany. The team of four students, aged 16 – 17 were awarded the prestigious title following a three-day competition against 54 other teams from 25 countries. Becoming the 19th recipients of the title, evolut1on were presented with the accolade by Nabeel A. Al Jama, Executive Vice President, HR and Support Services, Saudi Aramco on stage at a glittering awards ceremony at Dhahran Expo, in the Kingdom of Saudi Arabia’s Eastern Province. <br />
+              Adding to the prestige of the occasion the students were honoured to have two-times Formula 1 World Champion and Aramco Aston Martin Formula One Team driver, Fernando Alonso, attend the Awards ceremony, giving the students an insight into his career in a Q & A session and meeting many of the teams in a tour of the Pit Displays. He then kicked-o the final races of the Knockout Competition and presented the Aston Martin Aramco Formula One Team supported “Best Newcomer Award” to the winners, Agilas, from the Philippines.
+            </p>
+            <p>10 lucky students celebrated winning a coveted place in the Komatsu-Williams Engineering Academy, a global initiative designed to cultivate the next generation of engineering talent. The Academy’s first intake have been selected exclusively from this year’s World Finals students. By joining the Academy, students will gain invaluable experience and insights, benefiting from the combined expertise and resources of both Komatsu and Williams Racing. ​</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news14.jpg"></div>
+        <div class="content">
+            <p>The Aramco F1 in Schools World Champions title is highly recognized within the engineering and motorsport industries due to its rigorous judging criteria. Encompassing design, engineering, project management, innovation, marketing, and presentation skills, the multi-disciplinary challenge requires students to demonstrate a high level of competence and expertise across a range of subject areas. Many members of past teams who have secured the World Champions title have progressed to roles within F1 teams, including Lewis Fowler and George Stonor of 2019 winners, Evolve UK; Kyriakos Theofanidis of 2016 winners, Infinite Racing; and George and Max Britton of 2015 winners, Union Racing International, among others.</p>
+            <p>​With the award determined by scoring from a panel of over 60 industry judges, comprised of professionals from a range of industries, including STEM, marketing, motorsport, and education, the team achieved the highest scores across the board, and received particular recognition for their performance in engineering becoming the recipients of the Research and Development award, sponsored by McLaren.</p>
+            <p>Commenting on their achievement, Team Manager, Theo Paulsen, 16, said: “We really didn’t believe we would win. We’ve spent over two years working on this and put thousands of hours into it, it’s just amazing to have beaten all these other talented teams. We’re in shock at the moment, we just can’t quite believe it, I think it will take a while to sink in. The experience has been so special and the hospitality in Saudi Arabia has been wonderful.”</p>
+            <p>This year’s Aramco F1 in Schools World Finals was the first time the event has taken place in the Kingdom of Saudi Arabia and has seen over 450 students and educators from 25 countries visit the Kingdom to compete. O icially welcomed by the Cultural Partner, Ithra, on Saturday, students visited the famous center to gain insight into Saudi Arabian culture before the next day’s competition. The event will conclude with students visiting Qatar ahead of the Formula 1 Qatar Airways Qatar Grand Prix, for an exclusive pit lane walk at Lusail International Circuit on Thursday </p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news15.jpg"></div>
+        <div class="contend">
+            <p><b>Khalid Al-Zamil, Aramco Vice President of Public A airs, said</b>: “This year’s Aramco F1 in Schools World Finals showcased just how much talent exists within this next generation of engineers and pioneers. Evolut1on did a phenomenal job to achieve the World Champions title. Having the event take place within our home country has made the event particularly special for Aramco as an organization, and it has been an honor and a delight to share our culture with these incredible young people.”</p>
+            <p><b>​Andrew Denford, Founder and Chairman of F1 in Schools, said:</b> “evolut1on truly shone throughout the competition, and we are proud to announce that they are our new World Champions. The standard on show was incredibly high this year, so to beat 54 teams to the title is just a brilliant achievement, and we can’t wait to see what they go on to do next.” ​</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news16.jpg"></div>
+        <div class="image"><img loading="lazy" src="../assets/news17.jpg"></div>
+<div class="btns">
+  <a href="#" class="like-btn">
+    <i class="fas fa-thumbs-up"></i> Like
+  </a>
+  <a href="#" class="x-btn">
+    <i class="fab fa-x-twitter"></i> Post
+  </a>
+</div>
+  </div>
+  <div class="container">
+    <h2>LEAVE A REPLY</h2>
+    <form id="commentForm">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Email (not published)</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="website">Website</label>
+      <input type="url" name="website" id="website" />
+
+      <label for="comment">Comment</label>
+      <textarea name="comment" id="comment" rows="4" required></textarea>
+
+      <div class="checkbox-group">
+        <input type="checkbox" name="notify" id="notify" />
+        <label for="notify">Notify me of new comments to this post by email.</label>
+        <button type="submit">Submit</button>
+      </div>
+      <p id="msg"></p>
+    </form>
+  </div>
+</section>
+  <section class="archives">
+    <h1>Archives</h1>
+    <ul>
+        <li><a href="commentArchive1.html">September 2025</a></li>
+        <li><a href="commentArchive.html">July 2025 </a></li>
+        <li><a href="commentArchiver2.html">June 2025</a></li>
+        <li><a href="commentArchive3.html">May 2025 </a></li>
+        <li><a href="commentArchive4.html">December 2024</a></li>
+    </ul>
+    <p><a href="">RSS feed</a></p>
+  </section>
+  <hr class="section-border">
+  <footer>
+    <p>&copy; COPYRIGHTS <span id="year"></span>ALL RIGHTS RESERVED</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="..js/comments.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

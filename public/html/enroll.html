@@ -1,9 +1,18 @@
-    <div class="form-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+      <div class="form-container">
   <form id="enrolmentForm">
     <h3>TEAM Details</h3>
 
     <label>Country</label>
-    <select name="country" required>
+    <select name="country" id="country" required>
       <option value="">Select Country</option>
       <option value="Afghanistan">Afghanistan</option>
       <option value="Albania">Albania</option>
@@ -14,7 +23,7 @@
     <input type="text" name="email" required />
 
     <label>Competition Entry Class</label>
-    <select name="competition" required>
+    <select name="competition" id="competition" required>
       <option value="">Select Class</option>
       <option value="Primary Entry Class">Primary Entry Class</option>
       <option value="Entry Class">Entry Class</option>
@@ -24,16 +33,16 @@
     <input type="text" name="school" required />
 
     <label>School Postal / Zip Code</label>
-    <input type="text" name="zipcode" required />
+    <input type="text" name="zipcode" id="zipcode" required />
 
     <label>Teacher/Supervisor Email</label>
-    <input type="email" name="supervisoremail" required />
+    <input type="email" name="supervisoremail" id="supervisoremail" required />
 
     <label>Number of Students in the Team</label>
-    <input type="text" name="studentsintheteam" required />
+    <input type="text" name="studentsintheteam" id="studentsintheteam" required />
 
     <label>Years Involved in STEM Racing</label>
-    <select name="years" required>
+    <select name="years" id="years" required>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -41,14 +50,14 @@
 
     <h3>Software & Equipment</h3>
     <label>Design (CAD)</label>
-    <select name="design" required>
+    <select name="design" id="design" required>
       <option value="AutoCAD">AutoCAD</option>
       <option value="SketchUp">SketchUp</option>
       <option value="Onshape">Onshape</option>
     </select>
 
     <label>Analyse (CAD)</label>
-    <select name="analyse" required>
+    <select name="analyse" id="analyse" required>
       <option value="AutoCAD">AutoCAD</option>
       <option value="SketchUp">SketchUp</option>
       <option value="Onshape">Onshape</option>
@@ -56,7 +65,7 @@
     </select>
 
     <label>Make (CAM)</label>
-    <select name="make" required>
+    <select name="make" id="make" required>
       <option value="V5 Milling">V5 Milling</option>
       <option value="Fusion 360">Fusion 360</option>
       <option value="QUICKCAM Pro">QUICKCAM Pro</option>
@@ -64,14 +73,14 @@
     </select>
 
     <label>CNC Machine</label>
-    <select name="machine" required>
+    <select name="machine" id="machine" required>
       <option value="Odisea Fagor 8050N">Odisea Fagor 8050N</option>
       <option value="BIESSE RoverA">BIESSE RoverA</option>
       <option value="Baoji 5-axis">Baoji 5-axis</option>
     </select>
 
     <label>3D Printer</label>
-    <select name="printer" required>
+    <select name="printer" id="printer" required>
       <option value="Anycubic Mega">Anycubic Mega</option>
       <option value="Photon Mono">Photon Mono</option>
       <option value="BLOCKS">BLOCKS</option>
@@ -79,19 +88,30 @@
     </select>
 
     <label>Other Equipment Used</label>
-    <input type="text" name="aanyotherEquipment" required />
+    <input type="text" name="anyotherEquipment" required />
 
-    <div class="checkbox-group">
-      <input type="checkbox" name="sendCopy" id="sendCopy" />
-      <label for="sendCopy">Send me a copy of my responses</label>
-    </div>
 
+        <div class="p">
+        <p style="color: #000000; margin-left: 0;">Please tick this box if you would NOT like to receive updates via email from STEM Racing Ltd.</p>
+       <input type="checkbox" id="noUpdates" name="noUpdates">
+        </div>
+        <p style="color: #000000; margin-left: 0;">By entering your information into this form you consent to STEM Racing Ltd. forwarding your details to the authorised F1 in Schools co-ordinator in your country and will be used solely for the purpose of facilitating the challenge.</p>
+
+        <hr>
+        <div class="email-container">
+        <div class="checkbox-group">
+        <input type="checkbox" id="checkbox" required><p style="color: black;">Send me a copy of my responses</p>
+        </div>
     <div id="emailToSendContainer" style="display: none;">
       <label>Email to receive copy</label>
-      <input type="email" name="emailToSend" id="emailToSend" />
+      <input type="email" name="emailToSend" id="emailToSend"/>
     </div>
+        </div>
+        <button type="submit" class="button">Submit</button>
 
-    <button type="submit">Submit</button>
     <p id="msg"></p>
   </form>
 </div>
+<script src="../js/enrolment.js"></script>
+</body>
+</html>

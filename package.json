@@ -2,8 +2,8 @@
   "name": "tests",
   "version": "1.0.0",
   "description": "project-root/ │ ├── server.js ├── .env ├── package.json │ ├── routes/ │   └── contact.js │ ├── data/ │   └── contacts.json │ ├── public/ │   ├── script.js │   └── contact.html   ← your contact form │ └── node_modules/",
-  "main": "server.js",
-  "scripts": {
+  "main": "src/server.js", 
+   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js"
   },

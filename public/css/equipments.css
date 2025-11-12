@@ -1,31 +1,21 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+
+.equipment-image {
+  display: flex;
+  width: 100vw;
+  max-width: 500px;
+  height: 250px;
+  margin-right: 2rem;
 }
-.equipments-bg-image{
-    width: 100vw;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.equipment-image img {
+  width: 100%;
+  transform: translateX(60vw);
+  height: 100%;
 }
-.equipment-image{
-    width: 100%;
-    max-width: 400px;
-    height: 200px;
-    transform: translateX(20vw);
-    padding: 40px 10px;
-}
-.equipment-image img{
-    width: 600px;
-    height: 400px;
-    transform: scale(2.3, 2.5);
-    height: 100%;
-}
+
 .equipments-intro{
-    padding: 10px 50px;
+    padding: 10px 30px;
+    width: 96vw;
 }
 .equipments-intro h1{
     font-size: 40px;
@@ -33,7 +23,7 @@
     font-weight: bolder;
 }
 .equipments-intro img{
-    width: auto;
+    width: 100%;
     height: 100%;
     padding: 30px 10px;
 }
@@ -350,7 +340,13 @@ a{
   border: 2px solid white;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
-
+.video-box h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
 .video-wrapper {
   width: 100%;
   max-width: 600px;
@@ -459,7 +455,113 @@ a{
 #learn{
     padding: 20px 10px;
 }
+/*========FREEE COURSES=======*/
+.free-course-bg{
+    width: 100%;
+    height: 600px;
+}
+.free-course-bg img{
+    width: 100%;
+    height: 100%;
+}
+.free-learn h1{
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.free-learn{
+    text-align: center;
+}
+.free-learn p{
+    font-size: 18px;
+}
+.free-learn a{
+    text-decoration: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.212);
+    color: grey;
+}
+.section-divider{
+    border: 1px solid rgba(128, 128, 128, 0.192);
+}
+.learn-tag{
+    padding: 30px 10px;
+}
+.course-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+}
+.course-text h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-style: italic;
+}
+.course-text{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 30px;
+}
+.course-text p{
+    font-size: 18px;
+}
+.course-text ul{
+    padding: 10px 30px;
+}
+.course-text h4{
+    font-style: italic;
+    font-size: 18px;
+}
+.course-text ul li{
+    font-size: 18px;
+    padding: 2px 0;
+}
+.course-text button{
+    background-color: gray;
+    padding: 10px 20px;
+    width: max-content;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+.course-text button a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.course-image{
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+}
+.course-image img{
+    width: 100%;
+    height: 100%;
+}
+.course-cards{
+    padding: 30px 10px;
+}
+footer{
+    padding: 30px 10px;
+    color: white;
+    font-size: small;
+}
 /*ANYSYS*/
+@media (max-width: 992px) {
+    .ansybg img{
+    width: 90%;
+    font-size: 40px;
+    transform: translateX(35%);
+    height: auto;
+  }
+}
 @media (max-width: 768px) {
     .download-cards{
         flex-wrap: wrap;
@@ -480,6 +582,11 @@ a{
   .ansybg img{
     width: 90%;
     transform: translateX(10%);
+    height: auto;
+  }
+  .ansy-intro h1{
+    font-size: 35px;
+    margin-top: 0;
   }
   .sections, .images-container{
     flex-wrap: wrap;
@@ -522,10 +629,53 @@ a{
   .professional h1{
     margin: 1rem;
   }
-  .equipment-image{
-    transform: translateX(5vw);
-  }
-  .equipment-image img{
-    transform: scale(1.5, 2);
-  }
+.equipment-image {
+  display: flex;
+  width: 100vw;
+  max-width: 500px;
+  height: 250px;
+  margin-right: 2rem;
+}
+
+.equipment-image img {
+  width: 100%;
+  transform: translateX(20vw);
+  height: 100%;
+}
+.course-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.course-cards{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.course-image, .course-text{
+    flex:  0 0 auto;
+}
+.course-text button a{
+    font-size: 16px;
+}
+.course-text button{
+    padding: 8px 15px;
+}
+    
+}
+ 
+@media (max-width: 600px) {
+.equipment-image img {
+  width: 100%;
+  transform: translateX(10vw);
+  height: 100%;
+}
+}
+@media (max-width: 480px) {
+.equipment-image img {
+  width: 100%;
+  transform: translateX(0vw);
+  height: 100%;
+}
 }

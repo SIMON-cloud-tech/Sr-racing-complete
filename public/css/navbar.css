@@ -71,7 +71,7 @@ body {
   background: #080808;
   padding: 0.5rem 0;
   min-width: 200px;
-  border: 1px solid  rgba(252, 252, 252, 0.678);
+  border: 1px solid  rgba(252, 252, 252, 0.123);
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -170,7 +170,7 @@ body {
     opacity: 1;
     visibility: visible;
     display: none;
-    background: #161618;
+    background: #000000;
     padding-left: 1rem;
     transform: none;
   }
@@ -183,7 +183,12 @@ body {
     padding-left: 1.5rem;
   }
 }
-
+@media (max-width: 450px) {
+  .logo{
+    right: 2rem;
+    left: auto;
+  }
+}
 
 /*=================ANIMATED LOGO STYLINGS==================*/
 /* === HERO VIDEO SECTION === */
@@ -193,7 +198,12 @@ body {
   overflow: hidden;
   background-color: #000; /* fallback color */
 }
-
+#hero{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
 /* Video Styling */
 .hero-video {
   width: 100%;
@@ -201,6 +211,15 @@ body {
   object-fit: cover;        /* ensures video fills width without distortion */
   display: block;
   filter: brightness(85%);  /* optional slight dim for better contrast */
+}
+
+#hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: static;
+  filter: brightness(90%);
 }
 
 /* Optional subtle overlay for a cinematic look */
@@ -232,6 +251,16 @@ body {
   opacity: 0;
   animation: fadeIn 1.5s ease forwards; /* soft entry */
 }
+.enrol {
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center */
+  height: 60vh;              /* gives breathing space */
+  background-color: black; /* dark contrast background */
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
 
 /* Fade-in animation */
 @keyframes fadeIn {
@@ -249,6 +278,9 @@ body {
   .animated-logo {
     height: 50vh;
   }
+  .enrollment{
+    height: 50vh;
+  }
 
   .animated-logo img {
     width: 180px;            /* smaller logo for phones */
@@ -256,3 +288,9 @@ body {
 }
 
 /*=================ANIMATED LOGO STYLINGS===================*/
+.section-border{
+  border: 1px solid rgba(128, 128, 128, 0.123);
+}
+footer p{
+  color: white;
+}

@@ -70,3 +70,13 @@ button:hover {
   margin-top: 1rem;
   font-weight: bold;
 }
+
+@media (max-width: 600px) {
+  .containe{
+    width: 100%;
+    padding: 0.5rem;
+  }
+  input{
+    width: 90%;
+  }
+}

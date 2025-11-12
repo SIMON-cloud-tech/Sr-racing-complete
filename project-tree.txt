@@ -1,6 +1,7 @@
 .
-├── data
-│   └── contacts.json
+├── .env
+├── .gitignore
+├── migrateData.js
 ├── package.json
 ├── package-lock.json
 ├── project-tree.txt
@@ -33,6 +34,7 @@
 │   │   ├── autodesk4.jpg
 │   │   ├── autodeskbg.png
 │   │   ├── autodesk.jpeg
+│   │   ├── autodesk.mp4
 │   │   ├── autod.png
 │   │   ├── bgvideo.mp4
 │   │   ├── bgworks.jpg
@@ -77,6 +79,10 @@
 │   │   ├── equipments1.jpg
 │   │   ├── france1.jpg
 │   │   ├── france.png
+│   │   ├── free1.png
+│   │   ├── free2.png
+│   │   ├── free3.png
+│   │   ├── freecoursesbg.png
 │   │   ├── german1.jpg
 │   │   ├── germany.png
 │   │   ├── globalreach.png
@@ -93,20 +99,42 @@
 │   │   ├── howitworks.jpg
 │   │   ├── hungary1.jpg
 │   │   ├── hungarybg.png
+│   │   ├── india1.jpg
+│   │   ├── india.png
+│   │   ├── italy1.jpg
+│   │   ├── italy.png
+│   │   ├── japan1.jpg
+│   │   ├── japan.png
+│   │   ├── jordan1.jpg
+│   │   ├── jordanbg.png
+│   │   ├── jordan.png
 │   │   ├── komatsu1.png
 │   │   ├── komatsu2.png
 │   │   ├── komatsu3.png
 │   │   ├── komatsu4.jpg
 │   │   ├── komatsuwilliamsacademy.png
+│   │   ├── kuwait1.jpg
+│   │   ├── kuwait.png
 │   │   ├── landingpagebg1.png
 │   │   ├── landingpagebg2.png
 │   │   ├── landingpagebg3.png
 │   │   ├── learn1.jpg
 │   │   ├── learn.jpg
 │   │   ├── logo.png
+│   │   ├── lx1.jpg
+│   │   ├── lx.png
 │   │   ├── make.png
+│   │   ├── malaysia1.jpg
+│   │   ├── malaysia.png
+│   │   ├── mauritius1.png
+│   │   ├── mauritius.png
+│   │   ├── mexico1.jpg
+│   │   ├── mexico.png
 │   │   ├── modelblock.png
 │   │   ├── model.png
+│   │   ├── nepal1.jpg
+│   │   ├── nepal.png
+│   │   ├── new2.jpg
 │   │   ├── news10.png
 │   │   ├── news11.jpg
 │   │   ├── news12.png
@@ -127,7 +155,92 @@
 │   │   ├── nogo.png
 │   │   ├── nogozone.png
 │   │   ├── openingdoors.png
+│   │   ├── p10.jpg
+│   │   ├── p11.jpg
+│   │   ├── p12.jpg
+│   │   ├── p13.jpg
+│   │   ├── p14.jpg
+│   │   ├── p15.jpg
+│   │   ├── p17.jpg
+│   │   ├── p18.png
+│   │   ├── p19.jpg
+│   │   ├── p20.png
+│   │   ├── p21.png
+│   │   ├── p22.png
+│   │   ├── p23.jpg
+│   │   ├── p24.jpg
+│   │   ├── p25.png
+│   │   ├── p26.jpg
+│   │   ├── p27.jpg
+│   │   ├── p28.jpg
+│   │   ├── p2.png
+│   │   ├── p30.jpg
+│   │   ├── p31.jpg
+│   │   ├── p32.jpg
+│   │   ├── p33.jpg
+│   │   ├── p34.jpg
+│   │   ├── p34.png
+│   │   ├── p36.jpg
+│   │   ├── p37.jpg
+│   │   ├── p38.jpg
+│   │   ├── p39.jpg
+│   │   ├── p3.jpg
+│   │   ├── p40.jpg
+│   │   ├── p41.jpg
+│   │   ├── p42.jpg
+│   │   ├── p43.jpg
+│   │   ├── p45.jpg
+│   │   ├── p46.jpg
+│   │   ├── p47.jpg
+│   │   ├── p48.jpg
+│   │   ├── p49.jpg
+│   │   ├── p4.jpg
+│   │   ├── p50.jpg
+│   │   ├── p51.png
+│   │   ├── p52.png
+│   │   ├── p53.jpg
+│   │   ├── p54.jpg
+│   │   ├── p55.jpg
+│   │   ├── p56.jpg
+│   │   ├── p57.jpg
+│   │   ├── p58.jpg
+│   │   ├── p59.png
+│   │   ├── p5.jpg
+│   │   ├── p60.png
+│   │   ├── p61.jpg
+│   │   ├── p62.png
+│   │   ├── p63.jpg
+│   │   ├── p64.jpg
+│   │   ├── p65.png
+│   │   ├── p66.jpg
+│   │   ├── p67.jpg
+│   │   ├── p68.jpg
+│   │   ├── p69.png
+│   │   ├── p6.jpg
+│   │   ├── p70.jpg
+│   │   ├── p71.jpg
+│   │   ├── p72.jpg
+│   │   ├── p73.png
+│   │   ├── p74.jpg
+│   │   ├── p75.jpg
+│   │   ├── p76.jpg
+│   │   ├── p77.png
+│   │   ├── p78.jpg
+│   │   ├── p79.jpg
+│   │   ├── p7.jpg
+│   │   ├── p80.jpg
+│   │   ├── p81.jpg
+│   │   ├── p82.jpg
+│   │   ├── p83.jpg
+│   │   ├── p84.jpg
+│   │   ├── p85.jpg
+│   │   ├── p8.jpg
+│   │   ├── p9.jpg
+│   │   ├── panama1.png
+│   │   ├── panama.png
 │   │   ├── partnershipsbg.jpg
+│   │   ├── portugal1.jpg
+│   │   ├── portugal.png
 │   │   ├── power.png
 │   │   ├── primary2.jpg
 │   │   ├── primary3.jpg
@@ -239,11 +352,31 @@
 │   │   ├── rules4.jpg
 │   │   ├── rules4.png
 │   │   ├── rulesbg.png
+│   │   ├── saudia.jpg
+│   │   ├── saudia.png
 │   │   ├── scrutineer.jpg
+│   │   ├── singapore1.jpg
+│   │   ├── singapore.png
+│   │   ├── slovenia1.jpg
+│   │   ├── slovenia.png
+│   │   ├── southafrica1.jpg
+│   │   ├── southafrica.png
+│   │   ├── southkorea1.jpg
+│   │   ├── southkorea.png
+│   │   ├── spain.png
+│   │   ├── span1.jpg
 │   │   ├── spigot.jpeg
 │   │   ├── sponsorshipbg.jpg
+│   │   ├── switzerland1.jpg
+│   │   ├── switzerland.png
 │   │   ├── test.png
+│   │   ├── uae1.jpg
+│   │   ├── uaebg.png
+│   │   ├── uk1.jpg
+│   │   ├── ukbg.png
 │   │   ├── unitedkingdom.png
+│   │   ├── usa1.jpg
+│   │   ├── usabg.png
 │   │   └── worldfinals2025.png
 │   ├── css
 │   │   ├── comments.css
@@ -254,6 +387,7 @@
 │   │   ├── images.css
 │   │   ├── navbar.css
 │   │   ├── news.css
+│   │   ├── newsform.css
 │   │   ├── style.css
 │   │   └── work.css
 │   ├── docs
@@ -273,6 +407,19 @@
 │   │   ├── caymanresources.html
 │   │   ├── china.html
 │   │   ├── clarifications.html
+│   │   ├── comment1.html
+│   │   ├── comment2.html
+│   │   ├── comment3.html
+│   │   ├── comment4.html
+│   │   ├── comment5.html
+│   │   ├── comment6.html
+│   │   ├── comment7.html
+│   │   ├── comment8.html
+│   │   ├── commentArchive1.html
+│   │   ├── commentArchive3.html
+│   │   ├── commentArchive4.html
+│   │   ├── commentArchive.html
+│   │   ├── commentArchiver2.html
 │   │   ├── comments.html
 │   │   ├── compete.html
 │   │   ├── contact.html
@@ -283,12 +430,11 @@
 │   │   ├── downloads.html
 │   │   ├── enrol.html
 │   │   ├── enroll.html
-│   │   ├── enrolment.html
 │   │   ├── entryclass.html
 │   │   ├── equipment.html
-│   │   ├── form.html
 │   │   ├── france.html
 │   │   ├── franchising.html
+│   │   ├── freecourse.html
 │   │   ├── german.html
 │   │   ├── greece.html
 │   │   ├── hongkong.html
@@ -297,20 +443,15 @@
 │   │   ├── italy.html
 │   │   ├── japan.html
 │   │   ├── jordan.html
+│   │   ├── jordanresources.html
 │   │   ├── komatsuwilliamsacademy.html
 │   │   ├── kuwait.html
-│   │   ├── learn.htmljpg
-│   │   ├── alphine.png
-│   │   ├── amaron.png
-│   │   ├── animatedlogo.gif
-│   │   ├── ansys1.png
-│   │   ├── ansys2.png
-│   │   ├── ansys3.png
-│   │   ├── ansys4.jpg
+│   │   ├── learn.html
 │   │   ├── location.html
 │   │   ├── luxembourg.html
 │   │   ├── malaysia.html
 │   │   ├── mauritius.html
+│   │   ├── merged.html
 │   │   ├── mexico.html
 │   │   ├── nepal.html
 │   │   ├── news.html
@@ -324,6 +465,7 @@
 │   │   ├── professional.html
 │   │   ├── register.html
 │   │   ├── reports.html
+│   │   ├── resourcesjapan.html
 │   │   ├── rules.html
 │   │   ├── saudia.html
 │   │   ├── singapore.html
@@ -347,6 +489,7 @@
 │   │   ├── form.js
 │   │   ├── images.js
 │   │   ├── map.js
+│   │   ├── newsletter.js
 │   │   └── script.js
 │   ├── reportImages
 │   │   ├── images.json
@@ -387,16 +530,22 @@
 ├── routes
 │   ├── comments.js
 │   ├── contact.js
-│   └── enrolment.js
-└── src
-    ├── data
-    │   ├── logsComments.json
-    │   ├── logsEnrolment.json
-    │   └── logs.json
-    ├── limiter.js
-    ├── server.js
-    ├── utilsComments.js
-    ├── utilsEnrolment.js
-    └── utils.js
+│   ├── enrol.js
+│   └── newsletter.js
+├── src
+│   ├── data
+│   │   ├── comments.json
+│   │   ├── enrols.json
+│   │   ├── logsComments.json
+│   │   ├── logs.json
+│   │   └── newsletters.json
+│   ├── limiter.js
+│   ├── server.js
+│   └── utils.js
+└── utils
+    ├── saveData.js
+    ├── sendCommentEmail.js
+    ├── sendEmail.js
+    └── storeComment.js
 
-14 directories, 379 files
+14 directories, 535 files

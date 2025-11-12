@@ -1,0 +1,216 @@
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../assets/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Archives</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/news.css">
+  <link rel="stylesheet" href="../css/newsform.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+      
+   <nav class="navbar">
+    <div class="logo">
+      <img loading="lazy" src="../assets/logo.png" alt="STEM RACING Logo">
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="menu" id="menu">
+      <li  class="has-submenu">
+        <a href="#">HOME </a>
+        <ul class="submenu">
+            <li><a href="cookies.html">COOKIES POLICY</a></li>
+            <li><A href="privacy.html">PRIVACY POLICY</A></li>
+        </ul>
+    </li>
+
+      <li class="has-submenu">
+        <a href="#">THE CHALLENGE </a>
+        <ul class="submenu">
+          <li><a href="#">ABOUT THE CHALLENGE</a></li>
+          <li class="has-submenu">
+            <a href="#">BASIC STEPS &#9656;</a>
+            <ul class="submenu">
+                <li><A href="register.html">REGISTER</A></li>
+                <li><a href="learn.html">LEARN</a></li>
+                <li><a href="compete.html">COMPETE</a></li>
+                <li><a href="enrol.html">GLOBAL ENROLMENT</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">HOW IT WORKS</a></li>
+          <li class="has-submenu">
+            <a href="#">CLASSES OF ENTRY &#9656;</a>
+            <ul class="submenu">
+              <li><a href="primaryclass.html">PRIMARY CLASS</a></li>
+              <li><a href="entryclass.html">ENTRY CLASS</a></li>
+              <li><a href="developmentclass.html">DEVELOPMENT CLASS</a></li>
+              <li><a href="professional.html">PROFESSIONAL CLASS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a href="#">INTERNATIONAL </a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#">WORLD FINALS 2025 &#9656;</a>
+            <ul class="submenu">
+                <li><a href="teamprofiles.html">TEAM PROFILES</a></li>
+                <li><a href="komatsuwilliamsacademy.html">KOMATSU-WILLIAMS ENGINEERING ACADEMY</a></li>
+                <li><a href="surveys.html">SURVEY</a></li>
+                <li><a href="clarifications.html">CLARIFICATIONS 2025</a></li>
+            </ul>
+        </li>
+
+          <li><a href="#">WHERE TO  FIND US</a></li>
+
+          <li class="has-submenu">
+            <a href="#">COUNTRY LIST &#9656;</a>
+            <ul class="submenu">
+              <li class="has-submenu"><a href="#">ALGERIA</a><ul class="submenu"><li><a href="algeria.html">Contact Algeria</a></li></ul></li>
+              <li class="has-submenu"><a href="#">AUSTRALIA</a><ul class="submenu"><li><a href="australia.html">Contact Australia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">BRAZIL</a><ul class="submenu"><li><a href="brazil.html">Contact Brazil</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAMBODIA</a><ul class="submenu"><li><a href="cambodia.html">Contact Cambodia</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CANADA</a><ul class="submenu"><li><a href="canada.html">Contact Canada</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CAYMAN ISLANDS</a><ul class="submenu"><li><a href="caymanresources.html">RESOURCES(CAYMANS ISLANDS)</a></li><li><a href="cayman.html">CONTACTS (CAYMANS  ISLANDS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CHINA</a><ul class="submenu"><li><a href="china.html">Contact China</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UNITED KINGDOM</a><ul class="submenu"><li><a href="uk.html">Contact United Kingdom</a></li></ul></li>
+              <li class="has-submenu"><a href="#">COSTA RICA</a><ul class="submenu"><li><a href="costarika.html">Contact Costa RiCa</a></li></ul></li>
+              <li class="has-submenu"><a href="#">CYPRUS</a><ul class="submenu"><li><a href="cyprus.html">Contact Cyprus</a></li></ul></li>
+              <li class="has-submenu"><a href="#">FRANCE</a><ul class="submenu"><li><a href="france.html">Contact France</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GREECE</a><ul class="submenu"><li><a href="greece.html">CONTACT (GR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">GERMAN</a><ul class="submenu"><li><a href="german.html">CONTACTS (GER)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HONG KONG</a><ul class="submenu"><li><a href="hongkong.html">CONTACT (HK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">HUNGARY</a><ul class="submenu"><li><a href="hungary.html">CONTACT (HU)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">INDIA</a><ul class="submenu"><li><a href="india.html">CONTACT (IND)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">ITALY</a><ul class="submenu"><li><a href="italy.html">CONTACT (IT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JAPAN</a><ul class="submenu"><li><a href="japan.html">CONTACT (JP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">JORDAN</a><ul class="submenu"><li><a href="caymanresources.html">RESOURCES(JORDAN)</a></li><li><a href="jordan.html">CONTACTS (JOR)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">KUWAIT</a><ul class="submenu"><li><a href="kuwait.html">CONTACT (KUWAIT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">LUXEMBOURG</a><ul class="submenu"><li><a href="luxembourg.html">CONTACT (LX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MAURITIUS</a><ul class="submenu"><li><a href="mauritius.html">CONTACT (MAURITIUS)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MEXICO</a><ul class="submenu"><li><a href="mexico.html">CONTACT (MEX)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">MALAYSIA</a><ul class="submenu"><li><a href="malaysia.html">CONTACT (MAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">NEPAL</a><ul class="submenu"><li><a href="nepal.html">CONTACT (NEPAL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PANAMA</a><ul class="submenu"><li><a href="panama.html">CONTACT (PANAMA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">POLAND</a><ul class="submenu"><li><a href="poland.html">CONTACT (PL)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">PORTUGAL</a><ul class="submenu"><li><a href="portugal.html">CONTACT (PT)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SINGAPORE</a><ul class="submenu"><li><a href="singapore.html">CONTACT (SIN)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SLOVENIA</a><ul class="submenu"><li><a href="slovenia.html">CONTACT (SLO)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH AFRICA</a><ul class="submenu"><li><a href="southafrica.html">CONTACT (SA)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SPAIN</a><ul class="submenu"><li><a href="spain.html">CONTACT (SP)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SWITZERLAND</a><ul class="submenu"><li><a href="switzerland.html">CONTACT (SIW)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SAUDI ARABIA</a><ul class="submenu"><li><a href="saudia.html">CONTACT (SAUDI)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">SOUTH KOREA</a><ul class="submenu"><li><a href="southkorea.html">CONTACT (SK)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">UAE</a><ul class="submenu"><li><a href="uae.html">CONTACT (UAE)</a></li></ul></li>
+              <li class="has-submenu"><a href="#">USA</a><ul class="submenu"><li><a href="usacompetition.html">THE COMPETITION(USA)</a></li><li><a href="usa.html">CONTACTS (USA)</a></li></ul></li>
+
+            </ul>
+        </li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">MORE &#8943;</a>
+        <ul class="submenu">
+            <li class="has-submenu">
+            <a href="#">RESOURCES &#9656;</a>
+            <ul class="submenu">
+                <li><a href="rules.html">RULES & REGULATIONS</a></li>
+                <li><a href="equipment.html">EQUIPMENTS</a></li>
+                <li><a href="downloads.html">DOWNLOADS</a></li>
+                <li><a href="freecourse.html">Free courses.</a></li>
+                <li class="has-submenu">
+                    <a href="#">SOFTWARE &#9656;</a>
+                    <ul class="submenu">
+                        <li><a href="autodesk.html">AUTODESK</a></li>
+                        <li><a href="ansys.html">ANSYS</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+            <li class="has-submenu">
+              <a href="#">MEDIA</a>
+            <ul  class="submenu">
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="reports.html">IMPACT REPORT 24/25</a></li>
+              <li><a href="newsletter.html">SUBSCRIBE</a></li>
+            </ul>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">CORPORATE</a>
+            <ul class="submenu">
+              <li><a href="partnerships.html">PARTNERSHIPS</a></li>
+              <li><a href="sponsership.html">SPONSORSHIPS</a></li>
+              <li><a href="franchising.html">FRANCHISING</a></li>
+            </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </li>
+    </ul>
+  </nav>
+  <Section class="form-body">
+  <section class="cards">
+    <div class="card">
+        <h1>June 3RD 2025</h1>
+        <h5>6/3/2025<i></i><a id="commentCount" href="comment5.html">0 Comments</a></h5>
+        <div class="image"><img loading="lazy" src="../assets/news4.png"></div>
+        <div class="content">
+            <p>We are delighted to announce the continued partnership of Mitutoyo, the world’s leading manufacturer of precision measuring equipment, for the Aramco STEM Racing World Finals 2025. This renewed collaboration reaffirms a shared commitment to excellence, precision, and inspiring the next generation of engineers and innovators.</p>
+            <p>Mitutoyo’s continued support enhances the event’s technical foundation, playing a crucial role in the scrutineering phase—where each team’s car undergoes a rigorous technical inspection to ensure compliance with strict regulations. Mirroring the exacting standards of a real Formula 1 Grand Prix, scrutineering is conducted under Parc Fermé conditions, with every car examined for precision and accuracy using Mitutoyo’s world-class tools.</p>
+            <p>Tools such as vernier calipers, digimatic scales, and other advanced metrology instruments will be used by scrutineers to assess each car to millimetre-level accuracy. This level of precision is vital in determining each team’s compliance with technical specifications and maintaining fairness in competition. Teams will also have the unique opportunity to observe this process, gaining firsthand insight into real-world engineering practices.</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news5.png"></div>
+        <div class="content">
+            <p>In the lead-up to the World Finals, participating teams will benefit from exclusive access to the Mitutoyo eLearning platform, a comprehensive digital resource that offers in-depth training on metrology principles, measurement techniques, and tool handling. This access is designed to enhance students’ understanding and skills, supporting their preparation for the crucial scrutineering judging.</p>
+            <p>Takashi Matsuike, Managing Director of Mitutoyo Asia Pacific, said, “The event has a crucial role in developing the next generation of engineers and innovators; today's training is vital for tomorrow's industry success. The Finals also provide an excellent platform for us to highlight the practical applications of metrology and showcase the essential tools and equipment that drive it.”</p>
+            <p>Andrew Denford, Founder and CEO of F1 in Schools, adds, “We are proud to have the continued support of Mitutoyo, a global leader in precision engineering. Accurate measurement is at the core of all great engineering—whether it’s a full-scale Formula 1 car or our scale racing models. With Mitutoyo’s tools and expertise, we ensure a level playing field and inspire students to adopt the highest standards of technical excellence.</p>
+        </div>
+        <div class="image"><img loading="lazy" src="../assets/news6.png"></div>
+        <div class="content">
+            <p>With a global presence spanning over 100 countries, Mitutoyo offers local support alongside world-class technical expertise. Its comprehensive range of precision measuring solutions—spanning from micrometers, calipers, and indicators to hardness testers, vision measuring systems, form measuring machines, and 3D coordinate measuring machines—makes it the partner of choice for leading industries and educational institutions worldwide.</p>
+            <p>The continued partnership between Mitutoyo and STEM Racing underscores a mutual dedication to empowering young STEM talent, fostering innovation, and inspiring the engineers of tomorrow through real-world experience, global collaboration, and cutting-edge technology.</p>
+        </div>
+<div class="btns">
+  <a href="#" class="like-btn">
+    <i class="fas fa-thumbs-up"></i> Like
+  </a>
+  <a href="#" class="x-btn">
+    <i class="fab fa-x-twitter"></i> Post
+  </a>
+</div>
+    </div>
+  </section>
+    <section class="archives">
+    <h1>Archives</h1>
+    <ul>
+        <li><a href="commentArchive1.html">September 2025</a></li>
+        <li><a href="commentArchive.html">July 2025 </a></li>
+        <li><a href="commentArchiver2.html">June 2025</a></li>
+        <li><a href="commentArchive3.html">May 2025 </a></li>
+        <li><a href="commentArchive4.html">December 2024</a></li>
+    </ul>
+    <p><a href="">RSS feed</a></p>
+  </section>
+  <hr class="section-border">
+  <footer>
+    <p>&copy; COPYRIGHTS <span id="year"></span>ALL RIGHTS RESERVED</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="..js/comments.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

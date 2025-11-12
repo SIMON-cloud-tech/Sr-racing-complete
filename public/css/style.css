@@ -315,6 +315,7 @@ footer{
   overflow-x: hidden;
   flex-direction: column;
   height: 600px;
+  overflow-y: hidden;
 }
 .register-home h1{
   margin-left: 2rem;
@@ -328,8 +329,9 @@ footer{
   padding: 20px 50px;
 }
 .reg-image img{
-  width: 100%;
-  height: 100%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 .register-info h3{
   padding: 20px 10px;
@@ -536,6 +538,16 @@ footer{
   }
   .video-container{
     width: 100%;
+  }
+  .register-home{
+    height: auto;
+  }
+  .reg-image{
+    height: auto;
+  }
+  .reg-image img{
+    width: 100%;
+    height: auto;
   }
   /*partners*/
   .partner-image1{
